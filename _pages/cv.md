@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[[pdf]](http://academicpages.github.io/files/resume_pertsch.pdf)
+[[pdf]](http://kpertsch.github.io/files/resume_pertsch.pdf)
 
 Education
 ======
