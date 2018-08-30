@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj, Modified: Karl Pertsch
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-0pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-0pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeDatedItem}[3]{
+	\vspace{-1pt}\item{
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small{\textbf{#1}#2} & \small{#3}
+	\end{tabular*}\vspace{-20pt}
+}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Karl Pertsch}} (Updated Sept 2017) & Email : \href{mailto:pertsch@usc.edu}{pertsch@usc.edu}\\
+  \href{https://kpertsch.github.io}{kpertsch.github.io}& \\%Mobile : +1-(215)-285-6360 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Pennsylvania}{Philadelphia, PA}
+      {Fulbright Visiting Scholar in Computer Science;  GPA: 4.0 (Fall 2017 term)}{Aug. 2017 -- May 2018}
+    \resumeSubheading
+      {Technical University Dresden}{Dresden, Germany}
+      {Diploma in Electrical Engineering, Focus: Robotics and Control;  GPA: 4.0 (with distinction)}{Aug. 2012 -- Aug. 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+	\resumeSubheading
+	{GRASP Lab, University of Pennsylvania}{Philadelphia, PA}
+	{Fulbright Visiting Scholar, Supervisor: Kostas Daniilidis}{Aug. 2017 - May 2018}
+	\resumeItemListStart
+	\resumeItem{Unsupervised Activity Recognition}
+	{Learn a viewpoint-independent embedding that discriminates actions of birds in video data without human training annotations.}
+	\resumeItem{Coursework}
+	{Take classes in deep learning for computer vision (instructor: Jianbo Shi) and reinforcement learning. Final projects investigate GANs for data augmentation and Generative Adverserial Imitation Learning.}
+	\resumeItemListEnd
+
+    \resumeSubheading
+      {Computer Vision Lab Dresden}{Dresden, Germany}
+      {Diploma Thesis, Supervisor: Carsten Rother}{Apr. 2017 - Aug. 2017}
+      \resumeItemListStart
+        \resumeItem{Object Pose Estimation}
+          {Design, implement and test a pipeline for 6DoF pose estimation of objects from single RGB/RGB-D input images. Used dataset features texture-less objects and heavy occlusion.}
+        \resumeItem{Deep Learning}
+          {Implement Deep CNNs in Caffe for instance-aware semantic segmentation and 3D shape reconstruction as part of the pose estimation pipeline.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Institute of Automotive Engineering Dresden}{Dresden, Germany}
+      {Research Assistant}{Apr. 2016 - Jan. 2017}
+      \resumeItemListStart
+        \resumeItem{Reinforcement Learning}
+          {Develop a Reinforcement Learning algorithm for learning energy-optimal driving strategies for hybrid-electric vehicles. Implementation of linear value function approximation for improved learning speed and accuracy.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BMW Research and Technology}{Munich, Germany}
+      {Research Intern}{Oct. 2015 - Mar. 2016}
+      \resumeItemListStart
+        \resumeItem{Data Acquisition}
+          {Develop tools for data acquisition and evaluation in ROS for learning-based techniques in the field of automated driving.}
+        \resumeItem{Maneuver Classification and Prediction}
+          {Develop machine learning algorithms for the classification and prediction of vehicle lane change maneuvers using TensorFlow.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technical University Dresden}{Dresden, Germany}
+      {Teaching Assistant}{Apr. 2014 - Mar. 2015}
+      \resumeItemListStart
+        \resumeItem{Algebra and Electrical Engineering}
+          {Independently held two weekly exercises in undergraduate mathematics for engineers and lead the extra-tuition program in electrical engineering for undergraduate students.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Scholarships and Awards}
+  \resumeSubHeadingListStart
+    \resumeDatedItem{Fulbright Scholarship}{: Awarded by the US government for academic excellence and social commitment.}{Aug. 2017}
+    \resumeDatedItem{Year's Best Pre-Diploma}{: Awarded by the Faculty of Electrical and Computer Engineering.}{Aug. 2014}
+    \resumeDatedItem{Deutschlandstipendium}
+      {: National scholarship for outstanding academic achievements.}{Oct. 2013 - Sep. 2017}
+  \resumeSubHeadingListEnd
+\vspace{7px}
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Technical Skills}
+%  \resumeSubHeadingListStart
+%    \item{\textbf{Languages}{: C++, Python, Matlab, Java/Android}}
+%    \vspace{-7px}
+%    \item{\textbf{Technologies}{: Caffe, TensorFlow, ROS, Matlab/Simulink}}
+%  \resumeSubHeadingListEnd
+  
+%--------PUBLICATIONS------------------
+\section{Publications}
+\hangindent+30pt \hangafter=1
+O. H. Jaffari*, S. K. Mustikovela*, \textbf{K. Pertsch}, E. Brachmann, C. Rother, 'The best of both worlds: learning geometry-based 6D object pose estimation', submitted to \textit{Conference on Computer Vision and Pattern Recognition (CVPR)}, 2018.
+
+\hangindent+30pt \hangafter=1
+\textbf{K. Pertsch}, R. Liessner, B. Baeker, 'Reinforcement learning as a means for future diagnostical techniques',\hspace{2cm} (published in German) \textit{11\textsuperscript{th} Conference on Diagnosis in Mechatronic Vehicle Systems}, 2017.
+
+
+%-------------------------------------------
+\end{document}
