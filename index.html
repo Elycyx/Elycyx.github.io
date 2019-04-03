@@ -149,6 +149,43 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <tr  onmouseout="sensorimotor_stop()" onmouseover="sensorimotor_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'sensorimotor_image'><img src='keyin.gif' width="160" height="160"></div>
+            <img src='keyin.png' width="160" height="160">
+            </div>
+            <script type="text/javascript">
+            function sensorimotor_start() {
+            document.getElementById('sensorimotor_image').style.opacity = "1";
+            }
+            function sensorimotor_stop() {
+            document.getElementById('sensorimotor_image').style.opacity = "0";
+            }
+            sensorimotor_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="">
+            <papertitle>KeyIn: Discovering Subgoal Structure with Keyframe-based Video Prediction</papertitle>
+            </a>
+            <br>
+            <strong>Karl Pertsch</strong>*, <a target="_blank" href="http://www.cis.upenn.edu/~oleh/">Oleh Rybkin</a>*, <a target="_blank" href="https://www.linkedin.com/in/yjy0625/">Jingyun Yang</a>, <a target="_blank" href="http://www.scs.ryerson.ca/kosta/">Kosta Derpanis</a>, <a target="_blank" href="http://www-bcf.usc.edu/~limjj/">Joseph Lim</a>, <a target="_blank" href="http://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a>, <a target="_blank" href="http://www.drewjaegle.com/">Andrew Jaegle</a><br>
+            <i>Arxiv</i>, 2019<br>
+            <a target="_blank" href ="https://sites.google.com/view/keyin">project page</a> / <a target="_blank" href ="">arXiv</a>  /
+            <a target="_blank" href ="poster_keyin.pdf">poster</a>
+            <br>
+          </p>
+          <p> We propose a keyframe-based video prediction model that can unsupervisedly discover the moments of interesting change, the <i>keyframes</i>, in the data. We show that using the predicted keyframes as subgoals for planning improves performance on a simulated pushing task.</p>
+          <p>
+          <i> Hover over image (or tap the screen) to see the video.</i></p>
+          </p>
+          </td>
+        </tr>
+
 	      <tr  onmouseout="sensorimotor_stop()" onmouseover="sensorimotor_start()">
 	        <td width="25%">
 	          <div class="one">
