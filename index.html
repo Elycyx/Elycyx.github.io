@@ -86,6 +86,10 @@
     span.highlight {
       background-color: #ffffd0;
     }
+
+    img {
+      border-radius: 15px;
+    }
   </style>
   <link rel="icon" type="image/png" href="psihijatar-footer-1.png">
   <title>Karl Pertsch</title>
@@ -127,6 +131,7 @@
 	          <heading>News</heading>
 	          <p>
 	            <ul>
+                <li> [Jun 2020] New <a target="_blank" href="https://arxiv.org/abs/2006.13205">preprint</a> on long-horizon visual planning using hierarchical prediction! </li> <br>
 	            <li> [Apr 2020] Our work on keyframe-based prediction will be presented at L4DC'20!</li> <br>
                 <li> [Apr 2019] New <a target="_blank" href="https://arxiv.org/abs/1904.05869">preprint</a> on keyframe-based video prediction! </li> <br>
                 <li> [Apr 2019] Our work on discovering an agent's action space got accepted to ICLR19! </li> <br>
@@ -152,20 +157,56 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-        <tr  onmouseout="sensorimotor_stop()" onmouseover="sensorimotor_start()">
+        <tr  onmouseout="gcp_stop()" onmouseover="gcp_start()">
           <td width="25%">
             <div class="one">
-            <div class="two" id = 'sensorimotor_image'><img src='keyin.gif' width="160" height="160"></div>
-            <img src='keyin.png' width="160" height="160">
+            <div class="two" id = 'gcp_image'><img src='gcp_animate.gif' width="160" height="160"></div>
+            <img src='gcp.jpeg' width="160" height="160" style="z-index:-1">
             </div>
             <script type="text/javascript">
-            function sensorimotor_start() {
-            document.getElementById('sensorimotor_image').style.opacity = "1";
+            function gcp_start() {
+            document.getElementById('gcp_image').style.opacity = "1";
             }
-            function sensorimotor_stop() {
-            document.getElementById('sensorimotor_image').style.opacity = "0";
+            function gcp_stop() {
+            document.getElementById('gcp_image').style.opacity = "0";
             }
-            sensorimotor_stop()
+            gcp_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://arxiv.org/abs/2006.13205">
+            <papertitle>Long-Horizon Visual Planning with Goal-Conditioned Hierarchical Predictors</papertitle>
+            </a>
+            <br>
+            <strong>Karl Pertsch</strong>*, <a target="_blank" href="http://www.cis.upenn.edu/~oleh/">Oleh Rybkin</a>*, <a target="_blank" href="https://febert.github.io/">Frederik Ebert</a>, <a target="_blank" href="http://people.eecs.berkeley.edu/~cbfinn/">Chelsea Finn</a>, <a target="_blank" href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a>, <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a><br>
+            <i>Preprint</i>, 2020<br>
+            <a target="_blank" href ="https://orybkin.github.io/video-gcp/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2006.13205">arXiv</a>  /
+            <a target="_blank" href ="https://youtu.be/axXx-x86IeY">video</a> / <a target="_blank" href ="https://github.com/orybkin/video-gcp">code</a>
+            <br>
+          </p>
+          <p> We propose a hierarchical prediction model that predicts sequences by recursive infilling. We use this model to devise a hierarchical planning approach that allows to scale visual MPC to long-horizon tasks with hundreds of time steps.</p>
+          <p>
+          <i> Hover over image (or tap the screen) to see the video.</i></p>
+          </p>
+          </td>
+        </tr>
+
+        <tr  onmouseout="keyin_stop()" onmouseover="keyin_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'keyin_image'><img src='keyin.gif' width="160" height="160"></div>
+            <img src='keyin.png' width="160" height="160" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function keyin_start() {
+            document.getElementById('keyin_image').style.opacity = "1";
+            }
+            function keyin_stop() {
+            document.getElementById('keyin_image').style.opacity = "0";
+            }
+            keyin_stop()
             </script>
           </td>
           <td width="75%" valign="top">
@@ -176,7 +217,7 @@
             </a>
             <br>
             <strong>Karl Pertsch</strong>*, <a target="_blank" href="http://www.cis.upenn.edu/~oleh/">Oleh Rybkin</a>*, <a target="_blank" href="https://www.linkedin.com/in/yjy0625/">Jingyun Yang</a>, Shenghao Zhou, <a target="_blank" href="http://www.scs.ryerson.ca/kosta/">Kosta Derpanis</a>, <a target="_blank" href="http://www-bcf.usc.edu/~limjj/">Joseph Lim</a>, <a target="_blank" href="http://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a>, <a target="_blank" href="http://www.drewjaegle.com/">Andrew Jaegle</a><br>
-            <i>Preprint</i>, 2019<br>
+            <i>Conference on Learning for Dynamics and Control</i>, 2020<br>
             <a target="_blank" href ="https://sites.google.com/view/keyin">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/1904.05869">arXiv</a>  /
             <a target="_blank" href ="https://youtu.be/e2hVV5FDKf8">video</a> / <a target="_blank" href ="poster_keyin.pdf">poster</a>
             <br>
