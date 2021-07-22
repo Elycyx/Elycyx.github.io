@@ -132,12 +132,14 @@
 	          <heading>News</heading>
 	          <p>
 	            <ul>
+                <li> [Jul 2021] New <a target="_blank" href="https://arxiv.org/abs/2107.10253">preprint</a> on skill-based learning with demonstrations! </li> <br>
+                <li> [Jun 2021] I presented our work on skill-based reinforcement & imitation learning in the <a target="_blank" href=https://www.seas.upenn.edu/~dineshj/pal/index.html">PAL Lab</a> at UPenn and in the <a target="_blank" href=http://svl.stanford.edu/">Stanford Vision & Learning Lab</a>.</li><br>
                 <li> [Dec 2020] Received the CoRL 2020 <span style="color: #ff0000">Best Paper Presentation Award</span> for our <a target="_blank" href="https://arxiv.org/abs/2010.11944">SPiRL</a> paper, check out the <a target="_blank" href="https://youtu.be/kZOcqFRj5NE?t=5119">talk recording</a>!</li><br>
 	              <li> [Nov 2020] <a target="_blank" href="https://arxiv.org/abs/2010.11944">SPiRL</a> will be presented as a <span style="color: #ff0000">plenary talk</span> at CoRL & won the <span style="color: #ff0000">best paper runner-up award</span> at the robot learning workshop @ NeurIPS!</li><br>
                 <li> [Oct 2020] Two papers accepted to CoRL 2020 (<a target="_blank" href="https://arxiv.org/abs/2010.11944">SPiRL</a> and <a target="_blank" href="https://arxiv.org/abs/2010.11940">MoPA-RL</a>)! </li> <br>
                 <li> [Sept 2020] Our hierarchical prediction and planning paper was accepted to NeurIPS2020!</li> <br>
-                <li> [Jun 2020] New <a target="_blank" href="https://arxiv.org/abs/2006.13205">preprint</a> on long-horizon visual planning using hierarchical prediction! </li> <br>
-	              <li> [Apr 2020] Our work on keyframe-based prediction will be presented at L4DC'20!</li> <br>
+                <!-- <li> [Jun 2020] New <a target="_blank" href="https://arxiv.org/abs/2006.13205">preprint</a> on long-horizon visual planning using hierarchical prediction! </li> <br> -->
+	              <!-- <li> [Apr 2020] Our work on keyframe-based prediction will be presented at L4DC'20!</li> <br> -->
                 <!-- <li> [Apr 2019] New <a target="_blank" href="https://arxiv.org/abs/1904.05869">preprint</a> on keyframe-based video prediction! </li> <br> -->
                 <!-- <li> [Apr 2019] Our work on discovering an agent's action space got accepted to ICLR19! </li> <br> -->
                 <!--<li> [Dec 2018] I presented our work on unsupervised learning of agent's action spaces at the <a target="_blank" href="https://sites.google.com/view/infer2control-nips2018">Infer2Control workshop</a> at NeurIPS 2018 in Montreal. </li> <br> -->
@@ -161,6 +163,40 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <tr  onmouseout="skild_start()" onmouseover="skild_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'skild_image'><img src='skild_thumbnail.gif' width="160" height="160"></div>
+            <img src='skild_start.jpeg' width="160" height="160" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function skild_start() {
+            document.getElementById('skild_image').style.opacity = "1";
+            }
+            function skild_stop() {
+            document.getElementById('skild_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://arxiv.org/abs/2107.10253">
+            <papertitle>Demonstration-Guided Reinforcement Learning with Learned Skills</papertitle>
+            </a>
+            <br>
+            <strong>Karl Pertsch</strong>, <a target="_blank" href="https://youngwoon.github.io/">Youngwoon Lee</a>, <a target="_blank" href="https://ventusyue.github.io/">Yue Wu</a>,<a target="_blank" href="https://viterbi-web.usc.edu/~limjj/">Joseph J. Lim</a><br>
+            <a target="_blank" href ="https://clvrai.github.io/skild/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2107.10253">arXiv</a>  / 
+            <a target="_blank" href ="https://github.com/clvrai/skild">code</a>
+            <br>
+          </p>
+          <p> We follow long-horizon demonstrations by imitating the demonstrated skills instead of the primitive actions. By using skills learned from large, task-agnostic experience datasets for imitation, our approach SkiLD can seamlessly integrate task-agnostic data & demonstrations via a skill-based learning framework.</p>
+          <p>
+          </p>
+          </td>
+        </tr>
 
         <tr  onmouseout="spirl_start()" onmouseover="spirl_start()">
           <td width="25%">
