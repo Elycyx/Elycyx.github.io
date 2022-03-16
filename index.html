@@ -132,13 +132,14 @@
 	          <heading>News</heading>
 	          <p>
 	            <ul>
-	            <li> [Sept 2021] Our <a target="_blank" href="https://arxiv.org/abs/2107.10253">SkiLD paper</a> will be presented at CoRL 2021! </li> <br>
+                <li> [Mar 2022] Two papers accepted to ICLR 2022: <a target="_blank" href="https://clvrai.com/tarp">Task-Induced Representation Learning</a> and <a target="_blank" href="https://clvrai.com/simpl">Skill-based Meta-Reinforcement Learning</a>! </li> <br>
+	             <li> [Sept 2021] Our <a target="_blank" href="https://arxiv.org/abs/2107.10253">SkiLD paper</a> will be presented at CoRL 2021! </li> <br>
                 <li> [Jul 2021] New <a target="_blank" href="https://arxiv.org/abs/2107.10253">preprint</a> on skill-based learning with demonstrations! </li> <br>
                 <li> [Jun 2021] I presented our work on skill-based reinforcement & imitation learning in the <a target="_blank" href=https://www.seas.upenn.edu/~dineshj/pal/index.html">PAL Lab</a> at UPenn and in the <a target="_blank" href=http://svl.stanford.edu/">Stanford Vision & Learning Lab</a>. Check the <a target="_blank" href="https://drive.google.com/file/d/14xn9ojYfv8rSxVf5fPTixnkTpJRWUKKg/view?usp=sharing">Slides here</a>!</li><br>
                 <li> [Dec 2020] Received the CoRL 2020 <span style="color: #ff0000">Best Paper Presentation Award</span> for our <a target="_blank" href="https://arxiv.org/abs/2010.11944">SPiRL</a> paper, check out the <a target="_blank" href="https://youtu.be/kZOcqFRj5NE?t=5119">talk recording</a>!</li><br>
 	              <li> [Nov 2020] <a target="_blank" href="https://arxiv.org/abs/2010.11944">SPiRL</a> will be presented as a <span style="color: #ff0000">plenary talk</span> at CoRL & won the <span style="color: #ff0000">best paper runner-up award</span> at the robot learning workshop @ NeurIPS!</li><br>
                 <li> [Oct 2020] Two papers accepted to CoRL 2020 (<a target="_blank" href="https://arxiv.org/abs/2010.11944">SPiRL</a> and <a target="_blank" href="https://arxiv.org/abs/2010.11940">MoPA-RL</a>)! </li> <br>
-                <li> [Sept 2020] Our hierarchical prediction and planning paper was accepted to NeurIPS2020!</li> <br>
+                <!-- <li> [Sept 2020] Our hierarchical prediction and planning paper was accepted to NeurIPS2020!</li> <br> -->
                 <!-- <li> [Jun 2020] New <a target="_blank" href="https://arxiv.org/abs/2006.13205">preprint</a> on long-horizon visual planning using hierarchical prediction! </li> <br> -->
 	              <!-- <li> [Apr 2020] Our work on keyframe-based prediction will be presented at L4DC'20!</li> <br> -->
                 <!-- <li> [Apr 2019] New <a target="_blank" href="https://arxiv.org/abs/1904.05869">preprint</a> on keyframe-based video prediction! </li> <br> -->
@@ -164,6 +165,76 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <tr  onmouseout="tarp_start()" onmouseover="tarp_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'tarp_image'><img src='resources/tarp.png' width="160" height="160"></div>
+            <img src='resources/tarp.png' width="160" height="160" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function tarp_start() {
+            document.getElementById('tarp_image').style.opacity = "1";
+            }
+            function tarp_stop() {
+            document.getElementById('tarp_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://clvrai.com/tarp">
+            <papertitle>Task-Induced Representation Learning</papertitle>
+            </a>
+            <br>
+            <a target="_blank" href="https://junjungoal.github.io/">Jun Yamada</a>, <strong>Karl Pertsch</strong>, <a target="_blank" href="https://anisha2102.github.io/">Anisha Gunjal</a>, <a target="_blank" href="https://viterbi-web.usc.edu/~limjj/">Joseph J. Lim</a><br>
+            <i>International Conference on Learning Representations (ICLR)</i>, 2022<br>
+            <a target="_blank" href ="https://clvrai.com/tarp">project page</a> / <a target="_blank" href ="https://openreview.net/forum?id=OzyXtIZAzFv">arXiv</a>  / 
+            <a target="_blank" href ="https://github.com/clvrai/tarp">code</a>
+            <br>
+          </p>
+          <p> We evaluate the effectiveness of representation learning approaches on visually complex environments with substantial distractors. We compare common unsupervised representation learning approaches to task-induced representations, that leverage task information from prior tasks to learn what parts of the scene are important to model and what parts can be ignored.</p>
+          <p>
+          </p>
+          </td>
+        </tr>
+
+        <tr  onmouseout="simpl_start()" onmouseover="simpl_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'simpl_image'><img src='resources/simpl_teaser.png' width="160" height="160"></div>
+            <img src='resources/simpl_teaser.png' width="160" height="160" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function simpl_start() {
+            document.getElementById('simpl_image').style.opacity = "1";
+            }
+            function simpl_stop() {
+            document.getElementById('simpl_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://clvrai.com/simpl">
+            <papertitle>Skill-based Meta-Reinforcement Learning</papertitle>
+            </a>
+            <br>
+            <a target="_blank" href="https://namsan96.github.io/">Taewook Nam</a>, <a target="_blank" href="https://shaohua0116.github.io/">Shao-Hua Sun</a>, <strong>Karl Pertsch</strong>, <a target="_blank" href="http://www.sungjuhwang.com/">Sung Ju Hwang</a>, <a target="_blank" href="https://viterbi-web.usc.edu/~limjj/">Joseph J. Lim</a><br>
+            <i>International Conference on Learning Representations (ICLR)</i>, 2022<br>
+            <a target="_blank" href ="https://clvrai.com/simpl">project page</a> / <a target="_blank" href ="https://openreview.net/forum?id=jeLW-Fh9bV">arXiv</a>  / 
+            <a target="_blank" href ="https://github.com/namsan96/simpl">code</a>
+            <br>
+          </p>
+          <p> We perform meta-RL on top of skills extracted from large task-agnostic offline datasets. By combining meta-training tasks with offline data we can meta-learn policies that can quickly learn new long-horizon, sparse reward tasks.</p>
+          <p>
+          </p>
+          </td>
+        </tr>
 
         <tr  onmouseout="skild_start()" onmouseover="skild_start()">
           <td width="25%">
