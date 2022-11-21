@@ -126,32 +126,33 @@
           </tr>
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 	      <tr>
 	        <td width="100%" valign="middle">
 	          <heading>News</heading>
 	          <p>
 	            <ul>
+                <li> [Oct 2022] Our work on  <a target="_blank" href="https://kpertsch.github.io/star">cross-domain imitation learning</a> got accepted to CoRL'22! </li> <br>
                 <li> [Mar 2022] Two papers accepted to ICLR 2022: <a target="_blank" href="https://clvrai.com/tarp">Task-Induced Representation Learning</a> and <a target="_blank" href="https://clvrai.com/simpl">Skill-based Meta-Reinforcement Learning</a>! </li> <br>
 	             <li> [Sept 2021] Our <a target="_blank" href="https://arxiv.org/abs/2107.10253">SkiLD paper</a> will be presented at CoRL 2021! </li> <br>
                 <li> [Jul 2021] New <a target="_blank" href="https://arxiv.org/abs/2107.10253">preprint</a> on skill-based learning with demonstrations! </li> <br>
                 <li> [Jun 2021] I presented our work on skill-based reinforcement & imitation learning in the <a target="_blank" href=https://www.seas.upenn.edu/~dineshj/pal/index.html">PAL Lab</a> at UPenn and in the <a target="_blank" href=http://svl.stanford.edu/">Stanford Vision & Learning Lab</a>. Check the <a target="_blank" href="https://drive.google.com/file/d/14xn9ojYfv8rSxVf5fPTixnkTpJRWUKKg/view?usp=sharing">Slides here</a>!</li><br>
                 <li> [Dec 2020] Received the CoRL 2020 <span style="color: #ff0000">Best Paper Presentation Award</span> for our <a target="_blank" href="https://arxiv.org/abs/2010.11944">SPiRL</a> paper, check out the <a target="_blank" href="https://youtu.be/kZOcqFRj5NE?t=5119">talk recording</a>!</li><br>
 	              <li> [Nov 2020] <a target="_blank" href="https://arxiv.org/abs/2010.11944">SPiRL</a> will be presented as a <span style="color: #ff0000">plenary talk</span> at CoRL & won the <span style="color: #ff0000">best paper runner-up award</span> at the robot learning workshop @ NeurIPS!</li><br>
-                <li> [Oct 2020] Two papers accepted to CoRL 2020 (<a target="_blank" href="https://arxiv.org/abs/2010.11944">SPiRL</a> and <a target="_blank" href="https://arxiv.org/abs/2010.11940">MoPA-RL</a>)! </li> <br>
+                <li> [Oct 2020] Two papers accepted to CoRL 2020 (<a target="_blank" href="https://arxiv.org/abs/2010.11944">SPiRL</a> and <a target="_blank" href="https://arxiv.org/abs/2010.11940">MoPA-RL</a>)! </li> <br> -->
                 <!-- <li> [Sept 2020] Our hierarchical prediction and planning paper was accepted to NeurIPS2020!</li> <br> -->
                 <!-- <li> [Jun 2020] New <a target="_blank" href="https://arxiv.org/abs/2006.13205">preprint</a> on long-horizon visual planning using hierarchical prediction! </li> <br> -->
 	              <!-- <li> [Apr 2020] Our work on keyframe-based prediction will be presented at L4DC'20!</li> <br> -->
                 <!-- <li> [Apr 2019] New <a target="_blank" href="https://arxiv.org/abs/1904.05869">preprint</a> on keyframe-based video prediction! </li> <br> -->
                 <!-- <li> [Apr 2019] Our work on discovering an agent's action space got accepted to ICLR19! </li> <br> -->
                 <!--<li> [Dec 2018] I presented our work on unsupervised learning of agent's action spaces at the <a target="_blank" href="https://sites.google.com/view/infer2control-nips2018">Infer2Control workshop</a> at NeurIPS 2018 in Montreal. </li> <br> -->
-                <br>
+                <!-- <br> -->
 	              <!-- <li> [Aug 2017] Starting my one year Fulbright research stay in <a target="_blank" href="http://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a> group at UPenn. </li> <br> -->
-	            </ul>  
+	            <!-- </ul>  
 	          </p>
 	        </td>
 	      </tr>
-      	</table>
+      	</table> -->
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
@@ -165,6 +166,41 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <tr  onmouseout="star_start()" onmouseover="star_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'star_image'><img src='resources/star.gif' width="160" height="160"></div>
+            <img src='resources/star.png' width="160" height="160" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function star_start() {
+            document.getElementById('star_image').style.opacity = "1";
+            }
+            function star_stop() {
+            document.getElementById('star_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://kpertsch.github.io/star">
+            <papertitle>Cross-Domain Transfer via Semantic Skill Imitation</papertitle>
+            </a>
+            <br>
+            <strong>Karl Pertsch</strong>, <a target="_blank" href="https://rutadesai.github.io/">Ruta Desai</a>, <a target="_blank" href="https://vikashplus.github.io/">Vikash Kumar</a>, <a target="_blank" href="https://fmeier.github.io/">Franziska Meier</a>, <a target="_blank" href="https://www.clvrai.com/">Joseph J. Lim</a>, <a target="_blank" href="https://faculty.cc.gatech.edu/~dbatra/">Dhruv Batra</a>, <a target="_blank" href="https://ai.facebook.com/people/akshara-rai/">Akshara Rai</a><br>
+            <i>Conference on Robot Learning (CoRL)</i>, 2022<br>
+            <a target="_blank" href ="https://kpertsch.github.io/star">project page</a> / <a target="_blank" href ="https://openreview.net/forum?id=AdFROt9BoqE">arXiv</a>  / 
+            <a target="_blank" href ="https://github.com/kpertsch/star">code</a>
+            <br>
+          </p>
+          <p> We learn a semantic skill policy that enables cross-domain imitation: from robot to robot between different environments and even from human video to robot. We show that we can learn long-horizon robotic manipulation tasks in a simulated kitchen environment using only three minutes of human video, recorded in my kitchen with a GoPro strapped to my head.</p>
+          <p>
+          </p>
+          </td>
+        </tr>
 
         <tr  onmouseout="tarp_start()" onmouseover="tarp_start()">
           <td width="25%">
