@@ -202,6 +202,41 @@
           </td>
         </tr>
 
+        <tr  onmouseout="pato_start()" onmouseover="pato_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'pato_image'><img src='resources/pato.gif' width="160" height="160"></div>
+            <img src='resources/pato.png' width="160" height="160" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function pato_start() {
+            document.getElementById('pato_image').style.opacity = "1";
+            }
+            function pato_stop() {
+            document.getElementById('pato_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://clvrai.github.io/pato">
+            <papertitle>Assisted Teleoperation for Scalable Robot Data Collection</papertitle>
+            </a>
+            <br>
+            <a target="_blank" href="https://shivindass.github.io">Shivin Dass</a>*, <strong>Karl Pertsch</strong>*, <a target="_blank" href="https://www.hejiazhang.me/">Hejia Zhang</a>, <a target="_blank" href="https://youngwoon.github.io">Youngwoon Lee</a>, <a target="_blank" href="https://www.clvrai.com/">Joseph J. Lim</a>, <a target="_blank" href="https://stefanosnikolaidis.net/">Stefanos Nikolaidis</a><br>
+            <!-- <i>Conference on Robot Learning (CoRL)</i>, 2022<br> -->
+            <a target="_blank" href ="https://clvrai.github.io/pato">project page</a> / <a target="_blank" href ="https://drive.google.com/file/d/1pqgBTju0p7-mUUGl1IYoh4gQ1q_qbL7m/view?usp=sharing">arXiv</a>  / 
+            <a target="_blank" href ="https://github.com/clvrai/pato">code</a>
+            <br>
+          </p>
+          <p> We enable scalable robot data collection by assisting human teleoperators with a learned policy. Our approach estimates its uncertainty over future actions to determine when to request user input. In real world user studies we demonstrate that our system enables more efficient teleoperation with reduced mental load and up to four robots in parallel.</p>
+          <p>
+          </p>
+          </td>
+        </tr>
+
         <tr  onmouseout="tarp_start()" onmouseover="tarp_start()">
           <td width="25%">
             <div class="one">
