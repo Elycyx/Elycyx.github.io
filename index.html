@@ -166,6 +166,41 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+        <tr  onmouseout="rtx_start()" onmouseover="rtx_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'rtx_image'><img src='resources/rtx_thumbnail.gif' width="160" height="160"></div>
+            <img src='resources/rtx_thumbnail.jpeg' width="160" height="160" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function rtx_start() {
+            document.getElementById('rtx_image').style.opacity = "1";
+            }
+            function rtx_stop() {
+            document.getElementById('rtx_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://robotics-transformer-x.github.io/">
+            <papertitle>Open X-Embodiment: Robotic Learning Datasets and RT-X Models</papertitle>
+            </a>
+            <br>
+            Open X-Embodiment Collaboration<br>
+            <i>ArXiV</i>, 2023<br>
+            <a target="_blank" href ="https://robotics-transformer-x.github.io/">project page</a> / <a target="_blank" href ="https://robotics-transformer-x.github.io/paper.pdf">arXiv</a>  / 
+            <a target="_blank" href ="https://docs.google.com/spreadsheets/d/1rPBD77tk60AEIGZrGSODwyyzs5FgCU9Uz3h-3_t2A9g/edit?usp=sharing">dataset</a>
+            <br>
+          </p>
+          <p> We introduce the Open X-Embodiment Dataset, the largest robot learning dataset to date with 1M+ real robot trajectories, spanning 22 robot embodiments. We train large, transformer-based policies on the dataset (RT-1-X, RT-2-X) and show that co-training with our diverse dataset substantially improves performance.</p>
+          <p>
+          </p>
+          </td>
+        </tr>
+
         <tr  onmouseout="star_start()" onmouseover="star_start()">
           <td width="25%">
             <div class="one">
