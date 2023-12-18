@@ -158,13 +158,48 @@
             <td width="100%" valign="middle">
               <heading>Research</heading>
               <p>
-                I'm interested in machine learning, reinforcement learning and robotics. At the moment, I am working on methods for using large datasets to facilitate the learning of complex, long-horizon behaviors. Towards this goal I explore approaches that learn world models, representations of the environment or reusable skills from offline data and transfer them to new tasks.
+                I'm interested in machine learning, reinforcement learning and robotics. At the moment, I am working on methods for using large datasets to facilitate the learning of complex, long-horizon robotic behaviors. Towards this goal I explore approaches that learn world models, representations of the environment or reusable skills from offline data and transfer them to new tasks.
               </p>
             </td>
           </tr>
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <tr  onmouseout="octo_start()" onmouseover="octo_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'octo_image'><img src='resources/octo.gif' width="160" height="100"></div>
+            <img src='resources/octo.jpeg' width="160" height="100" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function octo_start() {
+            document.getElementById('octo_image').style.opacity = "1";
+            }
+            function octo_stop() {
+            document.getElementById('octo_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://octo-models.github.io/">
+            <papertitle>Octo: An Open-Source Generalist Robot Policy</papertitle>
+            </a>
+            <br>
+            <a target="_blank" href="https://dibyaghosh.com/">Dibya Ghosh</a>*, <a target="_blank" href="https://homerwalke.com/">Homer Walke</a>*, <strong>Karl Pertsch</strong>*, <a target="_blank" href="https://kevin.black/">Kevin Black</a>*, <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>*, ..., <a target="_blank" href="https://dorsa.fyi/">Dorsa Sadigh</a>, <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>, <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a><br>
+            <i>ArXiV</i>, 2023<br>
+            <a target="_blank" href ="https://octo-models.github.io/">project page</a> / <a target="_blank" href ="https://octo-models.github.io/paper.pdf">tech report</a>  / 
+            <a target="_blank" href ="https://github.com/octo-models/octo">code</a>
+            <br>
+          </p>
+          <p> We introduce Octo, an open-source generalist policy, trained on 800k robot trajectories. Octo is a large, transformer-based diffusion policy that supports flexible task specification, observation and action spaces. It can control a diverse range of robots out of the box and supports efficient finetuning to new robot configurations. We release pre-trained checkpoints and our full training + finetuning pipelines.</p>
+          <p>
+          </p>
+          </td>
+        </tr>
 
         <tr  onmouseout="rtx_start()" onmouseover="rtx_start()">
           <td width="25%">
