@@ -107,12 +107,12 @@
               <p align="center">
                 <name>Karl Pertsch</name>
               </p>
-              <p>I am a postdoc at UC Berkeley and Stanford University, where I work with <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> and <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> on deep learning, reinforcement learning and robotics.</p>
+              <p>I am a postdoc at UC Berkeley and Stanford University, where I work with <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> and <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> on training robot foundation models.</p>
 
               <p>I completed my PhD at the University of Southern California (USC), working with <a target="_blank" href="http://www-bcf.usc.edu/~limjj/">Joseph Lim</a>. During my PhD, I was fortunate to intern at Meta AI and spend time as a student researcher at Google Brain with <a target="_blank" href="https://karolhausman.github.io/">Karol Hausman</a>. Before my PhD, I spent one year as a Fulbright Scholar at the University of Pennsylvania, working with <a target="_blank" href="http://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a>.
               </p>
               <p align=center>
-                <a href="mailto:pertsch@usc.edu">Email</a> &nbsp/&nbsp
+                <a href="mailto:pertsch@berkeley.edu">Email</a> &nbsp/&nbsp
                 <a target="_blank" href="https://twitter.com/KarlPertsch"> Twitter </a> &nbsp/&nbsp
                 <a target="_blank" href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=3oe0I0QAAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a target="_blank" href="resume/resume_pertsch.pdf">CV</a> &nbsp/&nbsp
@@ -158,13 +158,48 @@
             <td width="100%" valign="middle">
               <heading>Research</heading>
               <p>
-                I'm interested in machine learning, reinforcement learning and robotics. At the moment, I am working on methods for using large datasets to facilitate the learning of complex, long-horizon robotic behaviors. Towards this goal I explore approaches that learn world models, representations of the environment or reusable skills from offline data and transfer them to new tasks.
+                I'm interested in machine learning, reinforcement learning and robotics. At the moment, I am working on training foundation models for robotics. Towards this goal, I am building diverse robot learning datasets and explore how we can train large policies on top of them.
               </p>
             </td>
           </tr>
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <tr  onmouseout="droid_start()" onmouseover="droid_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'droid_image'><img src='resources/droid.gif' width="160" height="160"></div>
+            <img src='resources/droid.jpeg' width="160" height="160" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function octo_start() {
+            document.getElementById('droid_image').style.opacity = "1";
+            }
+            function octo_stop() {
+            document.getElementById('droid_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://droid-dataset.github.io/">
+            <papertitle>DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset</papertitle>
+            </a>
+            <br>
+            <a target="_blank" href="https://www.linkedin.com/in/alexander-khazatsky-b98841149">Alexander Khazatsky</a>*, <strong>Karl Pertsch</strong>*, <a target="_blank" href="https://suraj-nair-1.github.io/">Suraj Nair</a>, ..., <a target="_blank" href="https://www.linkedin.com/in/tkollar">Thomas Kollar</a>, <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
+            <i>ArXiV</i>, 2024<br>
+            <a target="_blank" href ="https://droid-dataset.github.io/">project page</a> / <a target="_blank" href ="https://droid-dataset.github.io/paper.pdf">paper</a>  / 
+            <a target="_blank" href ="https://gdroid-dataset.github.io/visualizer">dataset visualizer</a>
+            <br>
+          </p>
+          <p> We introduce DROID, the most diverse robot manipulation dataset to date. It contains 76k demonstration trajectories or 350 hours of interaction data, collected across 564 scenes and 84 tasks by 50 data collectors in North America, Asia, and Europe over the course of 12 months. We demonstrate that training with DROID leads to policies with higher performance and improved generalization ability. We open source the full dataset, policy learning code, and a detailed guide for reproducing our robot hardware setup.</p>
+          <p>
+          </p>
+          </td>
+        </tr>
 
         <tr  onmouseout="octo_start()" onmouseover="octo_start()">
           <td width="25%">
