@@ -166,6 +166,41 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+        <tr  onmouseout="_start()" onmouseover="simpler_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'simpler_image'><img src='resources/simpler.gif' width="160" height="160"></div>
+            <img src='resources/simpler.jpeg' width="160" height="160" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function simpler_start() {
+            document.getElementById('simpler_image').style.opacity = "1";
+            }
+            function simpler_stop() {
+            document.getElementById('simpler_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://simpler-env.github.io/">
+            <papertitle>Evaluating Real-World Robot Manipulation Policies in Simulation</papertitle>
+            </a>
+            <br>
+            <a target="_blank" href="https://xuanlinli17.github.io/">Xuanlin Li</a>*, <a target="_blank" href="https://www.kylehsu.org/">Kyle Hsu</a>*, <a target="_blank" href="https://cseweb.ucsd.edu/~jigu/">Jiayuan Gu</a>*, <strong>Karl Pertsch</strong>, <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>, ..., <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a target="_blank" href="https://jiajunwu.com/">Jiajun Wu, <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn, <a target="_blank" href="https://cseweb.ucsd.edu/~haosu/">Hao Su</a>, <a target="_blank" href="https://quanvuong.github.io/">Quan Vuong</a>, <a target="_blank" href="https://tedxiao.me/">Ted Xiao</a><br>
+            <i>ArXiV</i>, 2024<br>
+            <a target="_blank" href ="https://simpler-env.github.io/">project page</a> / <a target="_blank" href ="https://simpler-env.github.io/paper">paper</a>  / 
+            <a target="_blank" href ="https://github.com/simpler-env/SimplerEnv">code</a>
+            <br>
+          </p>
+          <p> We introduce SIMPLER, a collection of simulated environments for manipulation policy evaluation on common real robot setups. We demonstrate strong correlation between policy performance in SIMPLER environments and in the real world through paired sim-and-real evaluations of open-source manipulation policies.</p>
+          <p>
+          </p>
+          </td>
+        </tr>
+
         <tr  onmouseout="droid_start()" onmouseover="droid_start()">
           <td width="25%">
             <div class="one">
@@ -173,10 +208,10 @@
             <img src='resources/droid.jpeg' width="160" height="160" style="z-index:-1">
             </div>
             <script type="text/javascript">
-            function octo_start() {
+            function droid_start() {
             document.getElementById('droid_image').style.opacity = "1";
             }
-            function octo_stop() {
+            function droid_stop() {
             document.getElementById('droid_image').style.opacity = "0";
             }
             // spirl_stop()
@@ -205,7 +240,7 @@
           <td width="25%">
             <div class="one">
             <div class="two" id = 'octo_image'><img src='resources/octo.gif' width="160" height="100"></div>
-            <img src='resources/octo.jpeg' width="160" height="100" style="z-index:-1">
+            <!-- <img src='resources/octo.jpeg' width="160" height="100" style="z-index:-1"> -->
             </div>
             <script type="text/javascript">
             function octo_start() {
