@@ -4,7 +4,7 @@ permalink: /
 
 title: "FastNav: A Fine-tuned Adaptive Small-language-model Trained for Multi-point Robot Navigation"
 authors:
-   Yuxuan Chen$^{1*}$, Yixin Han$^{1*}$ and Xiao Li$^1$
+   Yuxuan Chen$^{1}$, Yixin Han$^{1}$ and Xiao Li$^1$
 affiliations:
     $^{1}$ School of Mechanical Engineering, Shanghai Jiao Tong University
 paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
@@ -13,8 +13,11 @@ code: https://github.com/topics/turing-machines
 data: https://huggingface.co/docs/datasets
 ---
 
-![Figure1](/static/image/Figure1.png)
-*Figure 1: FastNav is a method for compressing large models for robot navigation.*
+<div style="text-align: center;">
+    <img src="/static/image/Figure1.png" alt="Figure1" style="max-width: 100%; height: auto;">
+    <p><em>Figure 1: FastNav is a method for compressing large models for robot navigation.</em></p>
+</div>
+
 
 <!-- Using HTML to center the abstract -->
 <div class="columns is-centered has-text-centered">
@@ -44,14 +47,14 @@ As large language models (LLMs) develop rapidly, robots have started to enjoy th
 ### Simulation Experiment
 <div style="display: flex; justify-content: space-around;">
     <div style="flex: 1; text-align: center;">
-        <video width="320" height="240" controls>
+        <video width="640" height="480" controls autoplay>
             <source src="/static/videos/hospital_frontdesk4X.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <p>Please recharge the robot at the front desk</p>
     </div>
     <div style="flex: 1; text-align: center;">
-        <video width="320" height="240" controls>
+        <video width="640" height="480" controls autoplay>
             <source src="/static/videos/hospital_delivery5X.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
