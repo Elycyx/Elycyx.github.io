@@ -2,7 +2,7 @@
 layout: project_page
 permalink: /
 
-title: FastNav: A Fine-tuned Adaptive Small-language-model Trained for Multi-point Robot Navigation
+title: "FastNav: A Fine-tuned Adaptive Small-language-model Trained for Multi-point Robot Navigation"
 authors:
     A. M. Turing
 affiliations:
