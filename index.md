@@ -45,16 +45,16 @@ As large language models (LLMs) develop rapidly, robots have started to enjoy th
 ## Experiment
 
 ### Simulation Experiment
-<div style="display: flex; justify-content: space-around;">
-    <div style="flex: 1; text-align: center;">
-        <video width="600" height="480" controls autoplay>
+<div style="display: flex; justify-content: space-around; gap: 20px;">
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
             <source src="/static/videos/hospital_frontdesk4X.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <p>Please recharge the robot at the front desk</p>
     </div>
-    <div style="flex: 1; text-align: center;">
-        <video width="600" height="480" controls autoplay>
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
             <source src="/static/videos/hospital_delivery5X.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
