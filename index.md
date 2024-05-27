@@ -4,9 +4,9 @@ permalink: /
 
 title: "FastNav: A Fine-tuned Adaptive Small-language-model Trained for Multi-point Robot Navigation"
 authors:
-    A. M. Turing
+   Yuxuan Chen$^{1*}$, Yixin Han$^{1*}$ and Xiao Li$^1$
 affiliations:
-    King's College, Cambridge
+    School of Mechanical Engineering, Shanghai Jiao Tong University
 paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
 video: https://www.youtube.com/results?search_query=turing+machine
 code: https://github.com/topics/turing-machines
@@ -18,19 +18,7 @@ data: https://huggingface.co/docs/datasets
     <div class="column is-four-fifths">
         <h2>Abstract</h2>
         <div class="content has-text-justified">
-The "computable" numbers may be described briefly as the real
-numbers whose expressions as a decimal are calculable by finite means.
-Although the subject of this paper is ostensibly the computable numbers.
-it is almost equally easy to define and investigate computable functions
-of an integral variable or a real or computable variable, computable
-predicates, and so forth. The fundamental problems involved are,
-however, the same in each case, and I have chosen the computable numbers
-for explicit treatment as involving the least cumbrous technique. I hope
-shortly to give an account of the relations of the computable numbers,
-functions, and so forth to one another. This will include a development
-of the theory of functions of a real variable expressed in terms of computable
-numbers. According to my definition, a number is computable
-if its decimal can be written down by a machine...
+As large language models (LLMs) develop rapidly, robots have started to enjoy the benefits that new control methods with large models bring. Because edge computing meets the requirements of fast response, privacy and network independence, we believe it is beneficial to the widespread of large models applied for robot navigation or even for various industries. In this paper, we propose a method for using lightweight LLMs, also known as small language models (SLMs), for robot navigation, which is called \textit{FastNav}, a fine-tuned adaptive small-language-model trained for multi-point robot navigation. The proposed method contains three modules, fine-tuning, teacher-student iteration and robot navigation controller. We train and evaluate models with FastNav in both simulation environment and real robot, proving that we can deploy them with low cost but high accuracy and few response time. Compared to other compression methods, FastNav shows its huge potential in local deployment of large models and tends to be a promising solution for multi-point robot navigation.
         </div>
     </div>
 </div>
