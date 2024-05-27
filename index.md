@@ -18,6 +18,7 @@ data: https://huggingface.co/docs/datasets
     <p><em>Figure 1: FastNav is a method for compressing large models for robot navigation.</em></p>
 </div>
 
+<br><br>
 
 <!-- Using HTML to center the abstract -->
 <div class="columns is-centered has-text-centered">
