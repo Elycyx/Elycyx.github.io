@@ -100,37 +100,37 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
           <video poster="" id="steve video" autoplay controls muted loop playsinline height="120%">
             <source src="static/videos/task1-0.mp4" type="video/mp4">
           </video>
-          <p></p>
+          <p id="overlay">task1-0</p>
         </div>
         <div class="item item-chair-tp has-text-centered">
           <video poster="" id="chair-tp video" autoplay controls muted loop playsinline height="120%">
             <source src="static/videos/task1-2.mp4" type="video/mp4">
           </video>
-          <p></p>
+          <p id="overlay">task1-2</p>
         </div>
         <div class="item item-chair-tp has-text-centered">
           <video poster="" id="chair-tp video" autoplay controls muted loop playsinline height="120%">
             <source src="static/videos/task1-6.mp4" type="video/mp4">
           </video>
-          <p></p>
+          <p id="overlay">task1-6</p>
         </div>
         <div class="item item-shiba has-text-centered">
           <video poster="" id="shiba video" autoplay controls muted loop playsinline height="120%">
             <source src="static/videos/task2-0.mp4" type="video/mp4">
           </video>
-          <p></p>
+          <p id="overlay">task2-0</p>
         </div>
         <div class="item item-fullbody has-text-centered">
           <video poster="" id="fullbody video" autoplay controls muted loop playsinline height="120%">
             <source src="static/videos/task2-2.mp4" type="video/mp4">
           </video>
-          <p></p>
+          <p id="overlay">task2-2</p>
         </div>
         <div class="item item-shiba has-text-centered">
           <video poster="" id="shiba video" autoplay controls muted loop playsinline height="120%">
             <source src="static/videos/task2-6.mp4" type="video/mp4">
           </video>
-          <p></p>
+          <p id="overlay">task2-6</p>
       </div>
     </div>
   </div>
