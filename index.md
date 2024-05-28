@@ -82,88 +82,73 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
 </div>
 
 
-### Real Experiment
-<div style="display: flex; justify-content: space-around; gap: 20px;">
-    <div style="flex: 1; text-align: center; max-width: 45%;">
-        <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/hospital_frontdesk4X.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p>Please recharge the robot at the front desk</p>
-    </div>
-    <div style="flex: 1; text-align: center; max-width: 45%;">
-        <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/hospital_delivery5X.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p>Bring a bottle of water from the vending machine to bed 1.</p>
-    </div>
-</div>
 
 
 ### Real Experiment
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-            <div class="video-wrapper">
-                <video width="320" height="240" controls muted>
-                    <source src="/static/videos/1-0.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p></p>
+<div class="swiper-wrapper-container">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="video-wrapper">
+                    <video width="320" height="240" controls muted>
+                        <source src="/static/videos/1-0.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+            </div>
+            <!-- Repeat for other videos -->
+            <div class="swiper-slide">
+                <div class="video-wrapper">
+                    <video width="320" height="240" controls muted>
+                        <source src="/static/videos/1-0.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="video-wrapper">
+                    <video width="320" height="240" controls muted>
+                        <source src="/static/videos/1-0.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="video-wrapper">
+                    <video width="320" height="240" controls muted>
+                        <source src="/static/videos/1-0.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="video-wrapper">
+                    <video width="320" height="240" controls muted>
+                        <source src="/static/videos/1-0.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="video-wrapper">
+                    <video width="320" height="240" controls muted>
+                        <source src="/static/videos/1-0.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p></p>
+                </div>
             </div>
         </div>
-        <!-- Repeat for other videos -->
-        <div class="swiper-slide">
-            <div class="video-wrapper">
-                <video width="320" height="240" controls muted>
-                    <source src="/static/videos/1-0.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p></p>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="video-wrapper">
-                <video width="320" height="240" controls muted>
-                    <source src="/static/videos/1-0.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p></p>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="video-wrapper">
-                <video width="320" height="240" controls muted>
-                    <source src="/static/videos/1-0.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p></p>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="video-wrapper">
-                <video width="320" height="240" controls muted>
-                    <source src="/static/videos/1-0.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p></p>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="video-wrapper">
-                <video width="320" height="240" controls muted>
-                    <source src="/static/videos/1-0.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p></p>
-            </div>
-        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
 </div>
 
 <!-- Swiper JS and CSS -->
@@ -183,11 +168,15 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
 </script>
 
 <style>
+    .swiper-wrapper-container {
+        max-width: 1200px;  /* 设置页面的最大宽度 */
+        margin: 0 auto;  /* 水平居中 */
+        padding: 0 20px;  /* 内边距 */
+    }
     .swiper-container {
-        width: 100%;
+        width: 100%;  /* 适应父级 div 的宽度 */
         height: 100%;
         position: relative;  /* 确保箭头按钮正确定位 */
-        padding: 0 50px;  /* 增加内边距，确保箭头按钮不与视频重叠 */
     }
     .swiper-slide {
         display: flex;
