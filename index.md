@@ -86,7 +86,9 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
 
 
 ### Real Experiment
+
 <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+
 <script src="./static/js/bulma-carousel.min.js"></script>
 
 <section class="hero is-light is-small">
