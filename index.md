@@ -57,6 +57,7 @@ The teacher-student iteration method involves a knowledgeable teacher model, suc
 ### Robot Navigation Controller
 The robot navigation controller uses the Gmapping algorithm to dynamically map the environment and direct the robot towards specified goal points. This helps the robot precisely navigate to specified goal points while automatically avoiding obstacles encountered along the way. 
 
+<link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
 <script src="./static/js/bulma-carousel.min.js"></script>
 
 <section class="hero is-light is-small">
