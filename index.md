@@ -19,8 +19,6 @@ data: https://huggingface.co/docs/datasets
 </div>
 <br><br>
 
-
-
 <!-- Using HTML to center the abstract -->
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
@@ -34,7 +32,7 @@ As large language models (LLMs) develop rapidly, robots have started to enjoy th
 
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-        <h2>Video</h2>
+        <h2 style="font-size: 36px;">Video</h2> 
         <div class="content">
             <video width="100%" height="auto" controls autoplay muted>
                 <source src="/static/videos/hospital_frontdesk4X.mp4" type="video/mp4">
@@ -45,7 +43,7 @@ As large language models (LLMs) develop rapidly, robots have started to enjoy th
     </div>
 </div>
 <br>
----
+
 <br>
 
 ## Approach
@@ -169,6 +167,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
     .swiper-container {
         width: 100%;
         height: 100%;
+        position: relative;  /* 确保箭头按钮正确定位 */
     }
     .swiper-slide {
         display: flex;
@@ -187,6 +186,18 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
     }
     .swiper-button-next, .swiper-button-prev {
         color: #000; /* 箭头颜色 */
+        position: absolute;  /* 确保箭头按钮绝对定位 */
+        top: 50%;  /* 垂直居中 */
+        width: 44px;  /* 调整箭头按钮大小 */
+        height: 44px;  /* 调整箭头按钮大小 */
+        margin-top: -22px;  /* 调整箭头按钮位置，使其居中 */
+        z-index: 10;  /* 确保箭头按钮在最上层 */
+    }
+    .swiper-button-prev {
+        left: 10px;  /* 左侧箭头位置 */
+    }
+    .swiper-button-next {
+        right: 10px;  /* 右侧箭头位置 */
     }
 </style>
 
