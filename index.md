@@ -88,31 +88,14 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
 <div style="display: flex; justify-content: space-around; gap: 20px;">
     <div style="flex: 1; text-align: center; max-width: 45%;">
         <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/1-0.mp4" type="video/mp4">
+            <source src="/static/videos/task1-0.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <p></p>
     </div>
     <div style="flex: 1; text-align: center; max-width: 45%;">
         <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/1-2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p></p>
-    </div>
-</div>
-<br>
-<div style="display: flex; justify-content: space-around; gap: 20px;">
-    <div style="flex: 1; text-align: center; max-width: 45%;">
-        <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/1-6.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p></p>
-    </div>
-    <div style="flex: 1; text-align: center; max-width: 45%;">
-        <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/3-0.mp4" type="video/mp4">
+            <source src="/static/videos/task1-2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <p></p>
@@ -122,14 +105,31 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
 <div style="display: flex; justify-content: space-around; gap: 20px;">
     <div style="flex: 1; text-align: center; max-width: 45%;">
         <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/3-2.mp4" type="video/mp4">
+            <source src="/static/videos/task1-6.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <p></p>
     </div>
     <div style="flex: 1; text-align: center; max-width: 45%;">
         <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/3-6.mp4" type="video/mp4">
+            <source src="/static/videos/task2-0.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p></p>
+    </div>
+</div>
+<br>
+<div style="display: flex; justify-content: space-around; gap: 20px;">
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
+            <source src="/static/videos/task2-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p></p>
+    </div>
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
+            <source src="/static/videos/task2-6.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <p></p>
