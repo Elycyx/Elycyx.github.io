@@ -91,7 +91,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
 
 <script src="./static/js/bulma-carousel.min.js"></script>
 
-<div class="your-html-container">
+
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
@@ -131,6 +131,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
             <source src="static/videos/task2-6.mp4" type="video/mp4">
           </video>
           <p id="overlay">task2-6</p>
+        </div>
       </div>
     </div>
   </div>
