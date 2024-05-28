@@ -22,7 +22,7 @@ data: https://huggingface.co/docs/datasets
 <!-- Using HTML to center the abstract -->
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-        <h2>Abstract</h2>
+        <h2 style="font-size: 36px;">Abstract</h2>
         <div class="content has-text-justified">
 As large language models (LLMs) develop rapidly, robots have started to enjoy the benefits that new control methods with large models bring. Because edge computing meets the requirements of fast response, privacy and network independence, we believe it is beneficial to the widespread of large models applied for robot navigation or even for various industries. In this paper, we propose a method for using lightweight LLMs, also known as small language models (SLMs), for robot navigation, which is called FastNav, a fine-tuned adaptive small-language-model trained for multi-point robot navigation. The proposed method contains three modules, fine-tuning, teacher-student iteration and robot navigation controller. We train and evaluate models with FastNav in both simulation environment and real robot, proving that we can deploy them with low cost but high accuracy and few response time. Compared to other compression methods, FastNav shows its huge potential in local deployment of large models and tends to be a promising solution for multi-point robot navigation.
         </div>
@@ -64,6 +64,25 @@ The robot navigation controller uses the Gmapping algorithm to dynamically map t
 The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iteration processes. It can be seen that all the SLMs accuracy rises gradually in both porcesses, and finally get close to that of GPT4. We recognize fine-tuning as the key to using SLMs, which obviously constraints their output format, and the teacher-student iteration is an effective way of futher improving their performance.
 
 ### Simulation Experiment
+<div style="display: flex; justify-content: space-around; gap: 20px;">
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
+            <source src="/static/videos/hospital_frontdesk4X.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Please recharge the robot at the front desk</p>
+    </div>
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
+            <source src="/static/videos/hospital_delivery5X.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Bring a bottle of water from the vending machine to bed 1.</p>
+    </div>
+</div>
+
+
+### Real Experiment
 <div style="display: flex; justify-content: space-around; gap: 20px;">
     <div style="flex: 1; text-align: center; max-width: 45%;">
         <video width="100%" height="auto" controls autoplay muted>
@@ -168,6 +187,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         width: 100%;
         height: 100%;
         position: relative;  /* 确保箭头按钮正确定位 */
+        padding: 0 50px;  /* 增加内边距，确保箭头按钮不与视频重叠 */
     }
     .swiper-slide {
         display: flex;
@@ -190,14 +210,14 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         top: 50%;  /* 垂直居中 */
         width: 44px;  /* 调整箭头按钮大小 */
         height: 44px;  /* 调整箭头按钮大小 */
-        margin-top: -22px;  /* 调整箭头按钮位置，使其居中 */
-        z-index: 10;  /* 确保箭头按钮在最上层 */
+        margin-top: -22px;  /* 确保箭头按钮垂直居中 */
+        z-index: 10;  /* 确保箭头按钮位于顶部 */
     }
     .swiper-button-prev {
-        left: 10px;  /* 左侧箭头位置 */
+        left: 10px;  /* 调整左箭头按钮的位置 */
     }
     .swiper-button-next {
-        right: 10px;  /* 右侧箭头位置 */
+        right: 10px;  /* 调整右箭头按钮的位置 */
     }
 </style>
 
