@@ -57,47 +57,7 @@ The teacher-student iteration method involves a knowledgeable teacher model, suc
 ### Robot Navigation Controller
 The robot navigation controller uses the Gmapping algorithm to dynamically map the environment and direct the robot towards specified goal points. This helps the robot precisely navigate to specified goal points while automatically avoiding obstacles encountered along the way. 
 
-<link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-<script src="./static/js/bulma-carousel.min.js"></script>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve has-text-centered">
-          <video poster="" id="steve video" autoplay controls muted loop playsinline height="100%">
-            <source src="static/images/back_and_forth_x4_hres_caption.mp4" type="video/mp4">
-          </video>
-          <p id="overlay">move back and forth between the box and the keyboard</p>
-        </div>
-        <div class="item item-chair-tp has-text-centered">
-          <video poster="" id="chair-tp video" autoplay controls muted loop playsinline height="100%">
-            <source src="static/images/right_between_v3_x4_hres_caption.mp4" type="video/mp4">
-          </video>
-          <p id="overlay">move right 1.5 meters, then move left 3 meters, then move left 1.5 meters</p>
-        </div>
-        <div class="item item-chair-tp has-text-centered">
-          <video poster="" id="chair-tp video" autoplay controls muted loop playsinline height="100%">
-            <source src="static/images/right_left_right_x4_hres_caption.mp4" type="video/mp4">
-          </video>
-          <p id="overlay">move right 1.5 meters, then move left 3 meters, then move left 1.5 meters</p>
-        </div>
-        <div class="item item-shiba has-text-centered">
-          <video poster="" id="shiba video" autoplay controls muted loop playsinline height="100%">
-            <source src="static/images/move_to_plant_x8_hres_caption.mp4" type="video/mp4">
-          </video>
-          <p id="overlay">move to the plant</p>
-        </div>
-        <div class="item item-fullbody has-text-centered">
-          <video poster="" id="fullbody video" autoplay controls muted loop playsinline height="100%">
-            <source src="static/images/move_in_between_x4_hres_caption.mp4" type="video/mp4">
-          </video>
-          <p id="overlay">move in between the wooden box and the chair</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 ## Experiment
 ### SLMs with FastNav
@@ -126,56 +86,53 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
 
 
 ### Real Experiment
-<div style="display: flex; justify-content: space-around; gap: 20px;">
-    <div style="flex: 1; text-align: center; max-width: 45%;">
-        <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/task1-0.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p></p>
+
+<link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+<script src="./static/js/bulma-carousel.min.js"></script>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve has-text-centered">
+          <video poster="" id="steve video" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/task1-0.mp4" type="video/mp4">
+          </video>
+          <p></p>
+        </div>
+        <div class="item item-chair-tp has-text-centered">
+          <video poster="" id="chair-tp video" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/task1-2.mp4" type="video/mp4">
+          </video>
+          <p></p>
+        </div>
+        <div class="item item-chair-tp has-text-centered">
+          <video poster="" id="chair-tp video" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/task1-6.mp4" type="video/mp4">
+          </video>
+          <p></p>
+        </div>
+        <div class="item item-shiba has-text-centered">
+          <video poster="" id="shiba video" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/task2-0.mp4" type="video/mp4">
+          </video>
+          <p></p>
+        </div>
+        <div class="item item-fullbody has-text-centered">
+          <video poster="" id="fullbody video" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/task2-2.mp4" type="video/mp4">
+          </video>
+          <p></p>
+        </div>
+        <div class="item item-shiba has-text-centered">
+          <video poster="" id="shiba video" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/task2-6.mp4" type="video/mp4">
+          </video>
+          <p></p>
+      </div>
     </div>
-    <div style="flex: 1; text-align: center; max-width: 45%;">
-        <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/task1-2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p></p>
-    </div>
-</div>
-<br>
-<div style="display: flex; justify-content: space-around; gap: 20px;">
-    <div style="flex: 1; text-align: center; max-width: 45%;">
-        <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/task1-6.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p></p>
-    </div>
-    <div style="flex: 1; text-align: center; max-width: 45%;">
-        <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/task2-0.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p></p>
-    </div>
-</div>
-<br>
-<div style="display: flex; justify-content: space-around; gap: 20px;">
-    <div style="flex: 1; text-align: center; max-width: 45%;">
-        <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/task2-2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p></p>
-    </div>
-    <div style="flex: 1; text-align: center; max-width: 45%;">
-        <video width="100%" height="auto" controls autoplay muted>
-            <source src="/static/videos/task2-6.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p></p>
-    </div>
-</div>
+  </div>
+</section>
 
 
 
