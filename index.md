@@ -134,16 +134,17 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
   </div>
 </section>
 
+<hr>
 
-<section class="section" id="BibTeX">
-<div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code> @inproceedings{huang23vlmaps,
-    title={Visual Language Maps for Robot Navigation},
-    author={Chenguang Huang and Oier Mees and Andy Zeng and Wolfram Burgard},
-    booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
-    year={2023},
-    address = {London, UK}
-    } </code></pre>
-</div>
-</section>
+## Citation
+```
+@article{turing1936computable,
+  title={On computable numbers, with an application to the Entscheidungsproblem},
+  author={Turing, Alan Mathison},
+  journal={Journal of Mathematics},
+  volume={58},
+  number={345-363},
+  pages={5},
+  year={1936}
+}
+```
