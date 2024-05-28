@@ -85,130 +85,132 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
 
 
 ### Real Experiment
-<div class="swiper-wrapper-container">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-                <div class="video-wrapper">
-                    <video width="320" height="240" controls muted>
-                        <source src="/static/videos/1-0.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p></p>
-                </div>
-            </div>
-            <!-- Repeat for other videos -->
-            <div class="swiper-slide">
-                <div class="video-wrapper">
-                    <video width="320" height="240" controls muted>
-                        <source src="/static/videos/1-0.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p></p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="video-wrapper">
-                    <video width="320" height="240" controls muted>
-                        <source src="/static/videos/1-0.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p></p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="video-wrapper">
-                    <video width="320" height="240" controls muted>
-                        <source src="/static/videos/1-0.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p></p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="video-wrapper">
-                    <video width="320" height="240" controls muted>
-                        <source src="/static/videos/1-0.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p></p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="video-wrapper">
-                    <video width="320" height="240" controls muted>
-                        <source src="/static/videos/1-0.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p></p>
-                </div>
-            </div>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item has-text-centered">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="/static/videos/1-0.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p id="overlay"></p>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="item has-text-centered">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="/static/videos/1-0.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p id="overlay"></p>
+        </div>
+        <div class="item has-text-centered">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="/static/videos/1-0.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p id="overlay"></p>
+        </div>
+        <div class="item has-text-centered">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="/static/videos/1-0.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p id="overlay"></p>
+        </div>
+        <div class="item has-text-centered">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="/static/videos/1-0.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p id="overlay"></p>
+        </div>
+        <div class="item has-text-centered">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="/static/videos/1-0.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p id="overlay"></p>
+        </div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="carousel-arrow carousel-prev">&#10094;</div>
+      <div class="carousel-arrow carousel-next">&#10095;</div>
     </div>
-</div>
+  </div>
+</section>
 
-<!-- Swiper JS and CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- CSS -->
+<style>
+  .hero.is-light {
+    background-color: #f5f5f5;
+  }
 
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #000;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .carousel-prev {
+    left: 10px;
+  }
+
+  .carousel-next {
+    right: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  #overlay {
+    margin-top: 10px;
+  }
+</style>
+
+<!-- JavaScript -->
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        loop: true,  // 保持循环切换功能
+  document.addEventListener('DOMContentLoaded', function() {
+    let index = 0;
+    const items = document.querySelectorAll('.carousel .item');
+    const totalItems = items.length;
+
+    document.querySelector('.carousel-next').addEventListener('click', function() {
+      items[index].style.transform = `translateX(-100%)`;
+      index = (index + 1) % totalItems;
+      items[index].style.transform = `translateX(0)`;
     });
+
+    document.querySelector('.carousel-prev').addEventListener('click', function() {
+      items[index].style.transform = `translateX(-100%)`;
+      index = (index - 1 + totalItems) % totalItems;
+      items[index].style.transform = `translateX(0)`;
+    });
+  });
 </script>
 
-<style>
-    .swiper-wrapper-container {
-        max-width: 1200px;  /* 设置页面的最大宽度 */
-        margin: 0 auto;  /* 水平居中 */
-        padding: 0 20px;  /* 内边距 */
-    }
-    .swiper-container {
-        width: 100%;  /* 适应父级 div 的宽度 */
-        height: 100%;
-        position: relative;  /* 确保箭头按钮正确定位 */
-    }
-    .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .video-wrapper {
-        text-align: center;
-    }
-    .video-wrapper video {
-        width: 100%;
-        height: auto;
-    }
-    .video-wrapper p {
-        margin-top: 10px;
-    }
-    .swiper-button-next, .swiper-button-prev {
-        color: #000; /* 箭头颜色 */
-        position: absolute;  /* 确保箭头按钮绝对定位 */
-        top: 50%;  /* 垂直居中 */
-        width: 44px;  /* 调整箭头按钮大小 */
-        height: 44px;  /* 调整箭头按钮大小 */
-        margin-top: -22px;  /* 确保箭头按钮垂直居中 */
-        z-index: 10;  /* 确保箭头按钮位于顶部 */
-    }
-    .swiper-button-prev {
-        left: 10px;  /* 调整左箭头按钮的位置 */
-    }
-    .swiper-button-next {
-        right: 10px;  /* 调整右箭头按钮的位置 */
-    }
-</style>
 
 ## Citation
 ```
