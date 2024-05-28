@@ -85,131 +85,57 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
 
 
 ### Real Experiment
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item has-text-centered">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
+<div style="display: flex; justify-content: space-around; gap: 20px;">
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
             <source src="/static/videos/1-0.mp4" type="video/mp4">
             Your browser does not support the video tag.
-          </video>
-          <p id="overlay"></p>
-        </div>
-        <div class="item has-text-centered">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="/static/videos/1-0.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <p id="overlay"></p>
-        </div>
-        <div class="item has-text-centered">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="/static/videos/1-0.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <p id="overlay"></p>
-        </div>
-        <div class="item has-text-centered">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="/static/videos/1-0.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <p id="overlay"></p>
-        </div>
-        <div class="item has-text-centered">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="/static/videos/1-0.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <p id="overlay"></p>
-        </div>
-        <div class="item has-text-centered">
-          <video poster="" autoplay controls muted loop playsinline height="100%">
-            <source src="/static/videos/1-0.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <p id="overlay"></p>
-        </div>
-      </div>
-      <!-- Add Arrows -->
-      <div class="carousel-arrow carousel-prev">&#10094;</div>
-      <div class="carousel-arrow carousel-next">&#10095;</div>
+        </video>
+        <p></p>
     </div>
-  </div>
-</section>
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
+            <source src="/static/videos/1-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p></p>
+    </div>
+</div>
+<br>
+<div style="display: flex; justify-content: space-around; gap: 20px;">
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
+            <source src="/static/videos/1-6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p></p>
+    </div>
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
+            <source src="/static/videos/3-0.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p></p>
+    </div>
+</div>
+<br>
+<div style="display: flex; justify-content: space-around; gap: 20px;">
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
+            <source src="/static/videos/3-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p></p>
+    </div>
+    <div style="flex: 1; text-align: center; max-width: 45%;">
+        <video width="100%" height="auto" controls autoplay muted>
+            <source src="/static/videos/3-6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p></p>
+    </div>
+</div>
 
-<!-- CSS -->
-<style>
-  .hero.is-light {
-    background-color: #f5f5f5;
-  }
-
-  .carousel {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .item {
-    min-width: 100%;
-    transition: transform 0.5s ease;
-  }
-
-  .carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2em;
-    color: #000;
-    cursor: pointer;
-    z-index: 10;
-  }
-
-  .carousel-prev {
-    left: 10px;
-  }
-
-  .carousel-next {
-    right: 10px;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  video {
-    width: 100%;
-    height: auto;
-  }
-
-  #overlay {
-    margin-top: 10px;
-  }
-</style>
-
-<!-- JavaScript -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    let index = 0;
-    const items = document.querySelectorAll('.carousel .item');
-    const totalItems = items.length;
-
-    document.querySelector('.carousel-next').addEventListener('click', function() {
-      items[index].style.transform = `translateX(-100%)`;
-      index = (index + 1) % totalItems;
-      items[index].style.transform = `translateX(0)`;
-    });
-
-    document.querySelector('.carousel-prev').addEventListener('click', function() {
-      items[index].style.transform = `translateX(-100%)`;
-      index = (index - 1 + totalItems) % totalItems;
-      items[index].style.transform = `translateX(0)`;
-    });
-  });
-</script>
 
 
 ## Citation
