@@ -132,7 +132,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
       </div>
     </div>
   </div>
-</section>
+
 
 
 
