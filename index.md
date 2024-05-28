@@ -44,7 +44,7 @@ As large language models (LLMs) develop rapidly, robots have started to enjoy th
         </div>
     </div>
 </div>
-
+<br>
 
 ## Approach
 ![Architecture](/static/image/Architecture.png)
@@ -158,10 +158,6 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
         },
         loop: true,
     });
