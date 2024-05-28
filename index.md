@@ -88,7 +88,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         <!-- Slide 1 -->
         <div class="swiper-slide">
             <div class="video-wrapper">
-                <video width="320" height="240" controls autoplay muted>
+                <video width="320" height="240" controls muted>
                     <source src="/static/videos/1-0.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -98,7 +98,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         <!-- Repeat for other videos -->
         <div class="swiper-slide">
             <div class="video-wrapper">
-                <video width="320" height="240" controls autoplay muted>
+                <video width="320" height="240" controls muted>
                     <source src="/static/videos/1-2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -107,7 +107,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         </div>
         <div class="swiper-slide">
             <div class="video-wrapper">
-                <video width="320" height="240" controls autoplay muted>
+                <video width="320" height="240" controls muted>
                     <source src="/static/videos/1-6.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -116,7 +116,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         </div>
         <div class="swiper-slide">
             <div class="video-wrapper">
-                <video width="320" height="240" controls autoplay muted>
+                <video width="320" height="240" controls muted>
                     <source src="/static/videos/3-0.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -125,7 +125,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         </div>
         <div class="swiper-slide">
             <div class="video-wrapper">
-                <video width="320" height="240" controls autoplay muted>
+                <video width="320" height="240" controls muted>
                     <source src="/static/videos/3-2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -134,7 +134,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         </div>
         <div class="swiper-slide">
             <div class="video-wrapper">
-                <video width="320" height="240" controls autoplay muted>
+                <video width="320" height="240" controls muted>
                     <source src="/static/videos/3-6.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -159,7 +159,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        loop: true,
+        loop: true,  // 保持循环切换功能
     });
 </script>
 
@@ -182,6 +182,9 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
     }
     .video-wrapper p {
         margin-top: 10px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        color: #000; /* 箭头颜色 */
     }
 </style>
 
