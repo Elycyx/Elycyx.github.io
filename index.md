@@ -17,7 +17,7 @@ data: https://huggingface.co/docs/datasets
     <img src="/static/image/Figure1.png" alt="Figure1" style="max-width: 100%; height: auto;">
     <p><em>FastNav is a method for compressing large models for robot navigation.</em></p>
 </div>
-
+<br><br>
 
 
 
@@ -30,8 +30,8 @@ As large language models (LLMs) develop rapidly, robots have started to enjoy th
         </div>
     </div>
 </div>
+<br>
 
----
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
         <h2>Video</h2>
@@ -44,6 +44,8 @@ As large language models (LLMs) develop rapidly, robots have started to enjoy th
         </div>
     </div>
 </div>
+<br>
+---
 <br>
 
 ## Approach
@@ -99,7 +101,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         <div class="swiper-slide">
             <div class="video-wrapper">
                 <video width="320" height="240" controls muted>
-                    <source src="/static/videos/1-2.mp4" type="video/mp4">
+                    <source src="/static/videos/1-0.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p></p>
@@ -108,7 +110,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         <div class="swiper-slide">
             <div class="video-wrapper">
                 <video width="320" height="240" controls muted>
-                    <source src="/static/videos/1-6.mp4" type="video/mp4">
+                    <source src="/static/videos/1-0.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p></p>
@@ -117,7 +119,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         <div class="swiper-slide">
             <div class="video-wrapper">
                 <video width="320" height="240" controls muted>
-                    <source src="/static/videos/3-0.mp4" type="video/mp4">
+                    <source src="/static/videos/1-0.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p></p>
@@ -126,7 +128,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         <div class="swiper-slide">
             <div class="video-wrapper">
                 <video width="320" height="240" controls muted>
-                    <source src="/static/videos/3-2.mp4" type="video/mp4">
+                    <source src="/static/videos/1-0.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p></p>
@@ -135,7 +137,7 @@ The accuracy of the SLMs and GPT4 on the test set during fine-tuning and iterati
         <div class="swiper-slide">
             <div class="video-wrapper">
                 <video width="320" height="240" controls muted>
-                    <source src="/static/videos/3-6.mp4" type="video/mp4">
+                    <source src="/static/videos/1-0.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p></p>
