@@ -35,7 +35,7 @@ As large language models (LLMs) develop rapidly, robots have started to enjoy th
         <h2 style="font-size: 36px;">Video</h2> 
         <div class="content">
             <video width="100%" height="auto" controls autoplay muted>
-                <source src="/static/videos/hospital_frontdesk4X.mp4" type="video/mp4">
+                <source src="/static/videos/task_movie.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <p></p>
