@@ -158,13 +158,108 @@
             <td width="100%" valign="middle">
               <heading>Research</heading>
               <p>
-                I'm interested in machine learning, reinforcement learning and robotics. At the moment, I am working on training foundation models for robotics. Towards this goal, I am building diverse robot learning datasets and explore how we can train large policies on top of them.
+                I'm interested in machine learning, reinforcement learning and robotics. At the moment, I am working on training foundation models for robotics. 
+                Towards this goal, I focus on three key challenges: 
+                (1) building diverse robot datasets, 
+                (2) training large-scale robot policies on this data, 
+                and (3) developing approaches for scalably evaluating robot foundation models.
               </p>
             </td>
           </tr>
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <tr  onmouseout="_start()" onmouseover="ecot_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'ecot_image'><img src='resources/ecot.gif' width="160" height="160"></div>
+            <img src='resources/ecot.jpeg' width="160" height="100" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function ecot_start() {
+            document.getElementById('ecot_image').style.opacity = "1";
+            }
+            function ecot_stop() {
+            document.getElementById('ecot_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://embodied-cot.github.io/">
+            <papertitle>Robotic Control via Embodied Chain-of-Thought Reasoning</papertitle>
+            </a>
+            <br>
+            <a target="_blank" href="https://michalzawalski.github.io/">Michal Zawalski</a>*, 
+            <a target="_blank" href="https://verityw.github.io/">William Chen</a>*, 
+            <strong>Karl Pertsch</strong>, 
+            <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>,
+            <a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a><br>
+            <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a><br>
+            <i>ArXiV</i>, 2024<br>
+            <a target="_blank" href ="https://embodied-cot.github.io/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2407.08693">paper</a>  / 
+            <a target="_blank" href ="https://github.com/MichalZawalski/embodied-CoT">code</a> / <a target="_blank" href ="https://huggingface.co/embodied-cot">models</a>
+            <br>
+          </p>
+          <p>We propose embodied chain-of-thought learning for vision-language-action models (VLAs). By training VLAs to "look and think" before acting, i.e. to predict intermediate "grounded reasoning steps" like subtasks, object bounding boxes, etc. we can enable substantially improved generalization.
+            Our approach increases the performance of OpenVLA on challenging generalization evaluations by 30% without any additional robot data.  </p>
+          <p>
+          </p>  
+          </td>
+        </tr>
+
+        <tr  onmouseout="_start()" onmouseover="openvla_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'openvla_image'><img src='resources/openvla.gif' width="160" height="160"></div>
+            <img src='resources/openvla.jpeg' width="160" height="100" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function openvla_start() {
+            document.getElementById('openvla_image').style.opacity = "1";
+            }
+            function openvla_stop() {
+            document.getElementById('openvla_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://openvla.github.io/">
+            <papertitle>OpenVLA: An Open-Source Vision-Language-Action Model</papertitle>
+            </a>
+            <br>
+            <a target="_blank" href="https://moojink.com/">Moo Jin Kim</a>*, <strong>Karl Pertsch</strong>*, <a href="https://www.siddkaramcheti.com/" target="_blank">Siddharth Karamcheti*</a>,
+            <a href="https://tedxiao.me/" target="_blank">Ted Xiao</a>,
+            <a href="https://abalakrishna123.github.io/" target="_blank">Ashwin Balakrishna</a>,
+            <a href="https://suraj-nair-1.github.io/" target="_blank">Suraj Nair</a>,
+            <a href="https://rmrafailov.github.io/" target="_blank">Rafael Rafailov</a>,
+            <a href="" target="_blank">Ethan Foster</a>,
+            <a href="" target="_blank">Grace Lam</a>,
+            <a href="https://www.linkedin.com/in/pannag-sanketi-bb91142" target="_blank">Pannag Sanketi</a>,
+            <a href="https://quanvuong.github.io/" target="_blank">Quan Vuong</a>,
+            <a href="https://aicenter.stanford.edu/people/thomas-kollar" target="_blank">Thomas Kollar</a>,
+            <a href="https://www.benburchfiel.com/" target="_blank">Benjamin Burchfiel</a>,
+            <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>,
+            <a href="https://dorsa.fyi/" target="_blank">Dorsa Sadigh</a>,
+            <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine,</a>
+            <a href="https://cs.stanford.edu/~pliang/" target="_blank">Percy Liang</a>,
+            <a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a><br>
+            <i>ArXiV</i>, 2024<br>
+            <a target="_blank" href ="https://openvla.github.io/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2406.09246">paper</a>  / 
+            <a target="_blank" href ="https://github.com/openvla/openvla">code</a> / <a target="_blank" href ="https://huggingface.co/openvla">models</a>
+            <br>
+          </p>
+          <p>We introduce OpenVLA, a 7B-parameter open-source vision-language-action model (VLA), pretrained on 970k robot episodes from the Open X-Embodiment dataset. OpenVLA sets a new state of the art for generalist robot manipulation policies. It supports controlling multiple robots out of the box and can be quickly adapted to new robot setups via parameter-efficient fine-tuning. OpenVLA models, code, and training data are fully open-source.</p>
+          <p>
+          </p>  
+          </td>
+        </tr>
 
         <tr  onmouseout="_start()" onmouseover="simpler_start()">
           <td width="25%">
@@ -225,7 +320,7 @@
             </a>
             <br>
             <a target="_blank" href="https://www.linkedin.com/in/alexander-khazatsky-b98841149">Alexander Khazatsky</a>*, <strong>Karl Pertsch</strong>*, <a target="_blank" href="https://suraj-nair-1.github.io/">Suraj Nair</a>, ..., <a target="_blank" href="https://www.linkedin.com/in/tkollar">Thomas Kollar</a>, <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
-            <i>ArXiV</i>, 2024<br>
+            <i>Robotics: Science and Systems (RSS)</i>, 2024<br>
             <a target="_blank" href ="https://droid-dataset.github.io/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2403.12945">paper</a>  / 
             <a target="_blank" href ="https://gdroid-dataset.github.io/visualizer">dataset visualizer</a>
             <br>
@@ -260,7 +355,7 @@
             </a>
             <br>
             <a target="_blank" href="https://dibyaghosh.com/">Dibya Ghosh</a>*, <a target="_blank" href="https://homerwalke.com/">Homer Walke</a>*, <strong>Karl Pertsch</strong>*, <a target="_blank" href="https://kevin.black/">Kevin Black</a>*, <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>*, ..., <a target="_blank" href="https://dorsa.fyi/">Dorsa Sadigh</a>, <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>, <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a><br>
-            <i>ArXiV</i>, 2023<br>
+            <i>Robotics: Science and Systems (RSS)</i>, 2024<br>
             <a target="_blank" href ="https://octo-models.github.io/">project page</a> / <a target="_blank" href ="https://octo-models.github.io/paper.pdf">tech report</a>  / 
             <a target="_blank" href ="https://github.com/octo-models/octo">code</a>
             <br>
@@ -295,7 +390,8 @@
             </a>
             <br>
             Open X-Embodiment Collaboration<br>
-            <i>ArXiV</i>, 2023<br>
+            (Project co-leads: <a href="https://quanvuong.github.io/" target="_blank">Quan Vuong</a>, <strong>Karl Pertsch</strong>)<br>
+            <i>International Conference on Robotics and Automation (ICRA)</i>, 2023 (<span style="color: #ff0000">Best Conference Paper Award</span>)<br>
             <a target="_blank" href ="https://robotics-transformer-x.github.io/">project page</a> / <a target="_blank" href ="https://robotics-transformer-x.github.io/paper.pdf">arXiv</a>  / 
             <a target="_blank" href ="https://docs.google.com/spreadsheets/d/1rPBD77tk60AEIGZrGSODwyyzs5FgCU9Uz3h-3_t2A9g/edit?usp=sharing">dataset</a>
             <br>
