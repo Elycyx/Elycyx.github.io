@@ -88,7 +88,7 @@
     }
 
     img {
-      border-radius: 15px;
+      border-radius: 0px;
     }
   </style>
   <link rel="icon" type="image/png" href="psihijatar-footer-1.png">
@@ -107,7 +107,8 @@
               <p align="center">
                 <name>Karl Pertsch</name>
               </p>
-              <p>I am a postdoc at UC Berkeley and Stanford University, where I work with <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> and <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> on training robot foundation models.</p>
+              <p>I am a postdoc at UC Berkeley and Stanford University, where I work with <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> and <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> on training robot foundation models.
+              I'm also a member of the technical staff at <a target="_blank" href="https://physicalintelligence.company/">Physical Intelligence</a>.</p>
 
               <p>I completed my PhD at the University of Southern California (USC), working with <a target="_blank" href="http://www-bcf.usc.edu/~limjj/">Joseph Lim</a>. During my PhD, I was fortunate to intern at Meta AI and spend time as a student researcher at Google Brain with <a target="_blank" href="https://karolhausman.github.io/">Karol Hausman</a>. Before my PhD, I spent one year as a Fulbright Scholar at the University of Pennsylvania, working with <a target="_blank" href="http://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a>.
               </p>
@@ -170,6 +171,47 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+
+        <tr  onmouseout="_start()" onmouseover="remix_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'remix_image'><img src='resources/remix.gif' width="160" height="160" style="background-color:white;"></div>
+            <img src='resources/remix.jpeg' width="160" height="100" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function remix_start() {
+            document.getElementById('remix_image').style.opacity = "1";
+            }
+            function remix_stop() {
+            document.getElementById('remix_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://arxiv.org/abs/2408.14037">
+            <papertitle>Re-Mix: Optimizing Data Mixtures for Large Scale Imitation Learning</papertitle>
+            </a>
+            <br>
+            <a target="_blank" href="http://joeyhejna.com/">Joey Hejna</a>, 
+            <a target="_blank" href="https://www.linkedin.com/in/chetbhateja">Chethan Bhateja</a>, 
+            <a target="_blank" href="http://kpertsch.github.io/">Yichen Jian</a>, 
+            <strong>Karl Pertsch</strong>, 
+            <a href="https://dorsa.fyi/" target="_blank">Dorsa Sadigh</a><br>
+            <i>Conference on Robot Learning (CoRL)</i>, 2024<br>
+            <a target="_blank" href ="https://arxiv.org/abs/2408.14037">paper</a>  / 
+            <a target="_blank" href ="https://github.com/jhejna/remix">code</a>
+            <br>
+          </p>
+          <p>We develop a scalable approach for optimizing data mixtures for large-scale robot imitation learning, using group distributionally robust optimization. Our approach generates dataset weights for the RT-X data mixture that 
+            outperform weights tuned by human experts. </p>
+          <p>
+          </p>  
+          </td>
+        </tr>
+
         <tr  onmouseout="_start()" onmouseover="ecot_start()">
           <td width="25%">
             <div class="one">
@@ -199,7 +241,7 @@
             <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>,
             <a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a><br>
             <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a><br>
-            <i>ArXiV</i>, 2024<br>
+            <i>Conference on Robot Learning (CoRL)</i>, 2024<br>
             <a target="_blank" href ="https://embodied-cot.github.io/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2407.08693">paper</a>  / 
             <a target="_blank" href ="https://github.com/MichalZawalski/embodied-CoT">code</a> / <a target="_blank" href ="https://huggingface.co/embodied-cot">models</a>
             <br>
@@ -250,7 +292,7 @@
             <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine,</a>
             <a href="https://cs.stanford.edu/~pliang/" target="_blank">Percy Liang</a>,
             <a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a><br>
-            <i>ArXiV</i>, 2024<br>
+            <i>Conference on Robot Learning (CoRL)</i>, 2024<br>
             <a target="_blank" href ="https://openvla.github.io/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2406.09246">paper</a>  / 
             <a target="_blank" href ="https://github.com/openvla/openvla">code</a> / <a target="_blank" href ="https://huggingface.co/openvla">models</a>
             <br>
@@ -285,7 +327,7 @@
             </a>
             <br>
             <a target="_blank" href="https://xuanlinli17.github.io/">Xuanlin Li</a>*, <a target="_blank" href="https://www.kylehsu.org/">Kyle Hsu</a>*, <a target="_blank" href="https://cseweb.ucsd.edu/~jigu/">Jiayuan Gu</a>*, <strong>Karl Pertsch</strong>, <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>, ..., <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a target="_blank" href="https://jiajunwu.com/">Jiajun Wu, <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn, <a target="_blank" href="https://cseweb.ucsd.edu/~haosu/">Hao Su</a>, <a target="_blank" href="https://quanvuong.github.io/">Quan Vuong</a>, <a target="_blank" href="https://tedxiao.me/">Ted Xiao</a><br>
-            <i>ArXiV</i>, 2024<br>
+            <i>Conference on Robot Learning (CoRL)</i>, 2024<br>
             <a target="_blank" href ="https://simpler-env.github.io/">project page</a> / <a target="_blank" href ="https://simpler-env.github.io/paper">paper</a>  / 
             <a target="_blank" href ="https://github.com/simpler-env/SimplerEnv">code</a>
             <br>
