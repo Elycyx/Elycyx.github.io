@@ -21,7 +21,7 @@ repository               : "Elycyx/Elycyx.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/avater.png"
+  avatar           : "avater.png"
   name             : "Yuxuan Chen"
   pronouns         : # example: "she/her"  
   bio              : "fourth-year undergraduate student"
@@ -44,7 +44,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : # "academicpages"
+  github           : "https://github.com/Elycyx"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
