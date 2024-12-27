@@ -21,7 +21,7 @@ repository               : "Elycyx/Elycyx.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "images/avater.png"
   name             : "Yuxuan Chen"
   pronouns         : # example: "she/her"  
   bio              : "fourth-year undergraduate student"
