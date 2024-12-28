@@ -14,3 +14,7 @@ I am currently advised by Prof. [Xiao Li](https://me.sjtu.edu.cn/teacher_directo
 # Publications
 
 Y. Chen, Y. Han and X. Li, "[FASTNav: Fine-Tuned Adaptive Small-Language- Models Trained for Multi-Point Robot Navigation](https://elycyx.github.io/publications/2024-11-25-FASTNav)," in IEEE Robotics and Automation Letters, vol. 10, no. 1, pp. 390-397, Jan. 2025.
+
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
