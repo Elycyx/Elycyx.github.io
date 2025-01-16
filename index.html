@@ -171,6 +171,50 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+        <tr  onmouseout="_start()" onmouseover="fast_start()">
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'fast_image'><img src='resources/fast.gif' width="160" height="160" style="background-color:white;"></div>
+            <img src='resources/fast.jpeg' width="160" height="100" style="z-index:-1">
+            </div>
+            <script type="text/javascript">
+            function fast_start() {
+            document.getElementById('fast_image').style.opacity = "1";
+            }
+            function fast_stop() {
+            document.getElementById('fast_image').style.opacity = "0";
+            }
+            // spirl_stop()
+            </script>
+          </td>
+          <td width="75%" valign="top">
+          <p>
+          <p>
+            <a target="_blank" href="https://www.pi.website/research/fast">
+            <papertitle>FAST: Efficient Action Tokenization for Vision-Language-Action Models</papertitle>
+            </a>
+            <br>
+            <strong>Karl Pertsch</strong>, 
+            <a target="_blank" href="https://kylesta.ch/">Kyle Stachowicz</a>, 
+            <a target="_blank" href="https://brianichter.com/">Brian Ichter</a>, 
+            <a target="_blank" href="https://dannydriess.github.io/">Danny Driess</a>, 
+            <a target="_blank" href="https://suraj-nair-1.github.io/">Suraj Nair</a>, 
+            <a target="_blank" href="https://quanvuong.github.io/">Quan Vuong</a>, 
+            <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>, 
+            <a target="_blank" href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a>,
+            <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a><br>
+            <i>ArXiv</i>, 2025<br>
+            <a target="_blank" href ="https://www.pi.website/download/fast.pdf">paper</a>  / 
+            <a target="_blank" href ="https://www.pi.website/research/fast">website</a>  / 
+            <a target="_blank" href ="https://huggingface.co/physical-intelligence/fast">code</a>
+            <br>
+          </p>
+          <p>We release FAST, a new action tokenization method for vision-language-action models. FAST is a simple, efficient, and scalable method for tokenizing actions into a compact, discrete representation.
+            With FAST, we can train VLAs 5x faster and build the first VLAs that work zero-shot in new environments. </p>
+          <p>
+          </p>  
+          </td>
+        </tr>
 
         <tr  onmouseout="_start()" onmouseover="remix_start()">
           <td width="25%">
