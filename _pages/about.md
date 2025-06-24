@@ -12,6 +12,7 @@ I'm a fourth-year undergraduate student from School of Mechanical Engineering, S
 
 # Publications
 
+* Y. Chen and X. Li, "[RLRC: Reinforcement Learning-based Recovery for Compressed Vision-Language-Action Models](https://elycyx.github.io/publications/2025-06-21-RLRC)," arXiv preprint arXiv:2506.17639, 2025.
+
 * Y. Chen, Y. Han and X. Li, "[FASTNav: Fine-Tuned Adaptive Small-Language- Models Trained for Multi-Point Robot Navigation](https://elycyx.github.io/publications/2024-11-25-FASTNav)," in IEEE Robotics and Automation Letters, vol. 10, no. 1, pp. 390-397, Jan. 2025.
 
-* Y. Chen and X. Li, "[RLRC: Reinforcement Learning-based Recovery for Compressed Vision-Language-Action Models](https://arxiv.org/abs/2506.17639)," arXiv preprint arXiv:2506.17639, 2025.
