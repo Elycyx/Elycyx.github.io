@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112301535-1"></script>
 	<script>
@@ -105,23 +106,18 @@
           <tr>
             <td width="67%" valign="middle">
               <p align="center">
-                <name>Karl Pertsch</name>
+                <name>Yuxuan Chen (陈宇轩)</name>
               </p>
-              <p>I am a postdoc at UC Berkeley and Stanford University, where I work with <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> and <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> on training robot foundation models.
-              I'm also a member of the technical staff at <a target="_blank" href="https://physicalintelligence.company/">Physical Intelligence</a>.</p>
-
-              <p>I completed my PhD at the University of Southern California (USC), working with <a target="_blank" href="http://www-bcf.usc.edu/~limjj/">Joseph Lim</a>. During my PhD, I was fortunate to intern at Meta AI and spend time as a student researcher at Google Brain with <a target="_blank" href="https://karolhausman.github.io/">Karol Hausman</a>. Before my PhD, I spent one year as a Fulbright Scholar at the University of Pennsylvania, working with <a target="_blank" href="http://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a>.
+              <p>I'm a first-year Ph.D. student from School of Mechanical Engineering, Shanghai Jiao Tong University. I am currently advised by Prof. <a target="_blank" href="https://me.sjtu.edu.cn/teacher_directory1/lixiao.html">Xiao Li</a>. My research interests include efficient robotic policies, large language models, and embodied AI. </p>
               </p>
               <p align=center>
-                <a href="mailto:pertsch@berkeley.edu">Email</a> &nbsp/&nbsp
-                <a target="_blank" href="https://twitter.com/KarlPertsch"> Twitter </a> &nbsp/&nbsp
-                <a target="_blank" href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=3oe0I0QAAAAJ">Google Scholar</a> &nbsp/&nbsp
-                <a target="_blank" href="resume/resume_pertsch.pdf">CV</a> &nbsp/&nbsp
-                <a target="_blank" href="https://www.linkedin.com/in/karlpertsch/"> LinkedIn </a>
+                <a href="chen_yuxuan@sjtu.edu.cn">Email</a> &nbsp/&nbsp
+                <a target="_blank" href="https://scholar.google.cz/citations?user=LEjLVY8AAAAJ&hl=zh-CN&oi=sra">Google Scholar</a> &nbsp/&nbsp
+                <a target="_blank" href="https://github.com/Elycyx">GitHub</a>
               </p>
             </td>
             <td width="33%">
-              <img src="profile_karl.jpg" width="250" height="250">
+              <img src="resources/avater.png" width="250" height="250">
             </td>
           </tr>
         </table>
@@ -157,32 +153,63 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="100%" valign="middle">
-              <heading>Research</heading>
-              <p>
-                I'm interested in machine learning, reinforcement learning and robotics. At the moment, I am working on training foundation models for robotics. 
-                Towards this goal, I focus on three key challenges: 
-                (1) building diverse robot datasets, 
-                (2) training large-scale robot policies on this data, 
-                and (3) developing approaches for scalably evaluating robot foundation models.
-              </p>
+              <heading>🎓 Education</heading>
             </td>
           </tr>
         </table>
+        <hr>
+
+        <table id="tbPublications" width="100%">
+          <tbody>
+          <tr>
+            <td width="320">
+            <img src="resources/sjtu.png" width="120px" style="margin-left: 20px">
+            </td>				
+            <td>
+              <p><b>Shanghai Jiao Tong University (SJTU)</b><br><b style="font-size: 12px;">School of Mechanical Engineering</b></p>
+              <div style="font-size: 12px">Ph.D. Student: 2025.09 - Present, supervised by Prof. <a href="https://me.sjtu.edu.cn/teacher_directory1/lixiao.html">Xiao Li</a>.</div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table id="tbPublications" width="100%">
+          <tbody>
+          <tr>
+            <td width="320">
+            <img src="resources/sjtu.png" width="120px" style="margin-left: 20px">
+            </td>				
+            <td>
+              <p><b>Shanghai Jiao Tong University (SJTU)</b><br><b style="font-size: 12px;">School of Mechanical Engineering</b><br><b style="font-size: 12px;">Major in Mechanical Engineering</b></p>
+              <div style="font-size: 12px">Undergraduate Student: 2021.09 - 2025.06.</div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>📝 Publications</heading>
+            </td>
+          </tr>
+        </table>
+        <hr>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-        <tr  onmouseout="_start()" onmouseover="fast_start()">
+        <tr  onmouseout="_start()" onmouseover="rlrc_start()">
           <td width="25%">
             <div class="one">
-            <div class="two" id = 'fast_image'><img src='resources/fast.gif' width="160" height="160" style="background-color:white;"></div>
-            <img src='resources/fast.jpeg' width="160" height="100" style="z-index:-1">
+            <img src='resources/rlrc.png' width="180" height="100" style="z-index:-1">
             </div>
             <script type="text/javascript">
-            function fast_start() {
-            document.getElementById('fast_image').style.opacity = "1";
+            function rlrc_start() {
+            document.getElementById('rlrc_image').style.opacity = "1";
             }
-            function fast_stop() {
-            document.getElementById('fast_image').style.opacity = "0";
+            function rlrc_stop() {
+            document.getElementById('rlrc_image').style.opacity = "0";
             }
             // spirl_stop()
             </script>
@@ -190,44 +217,35 @@
           <td width="75%" valign="top">
           <p>
           <p>
-            <a target="_blank" href="https://www.pi.website/research/fast">
-            <papertitle>FAST: Efficient Action Tokenization for Vision-Language-Action Models</papertitle>
+            <a target="_blank" href="https://rlrc-vla.github.io/">
+            <papertitle>RLRC: Reinforcement Learning-based Recovery for Compressed Vision-Language-Action Models</papertitle>
             </a>
             <br>
-            <strong>Karl Pertsch</strong>, 
-            <a target="_blank" href="https://kylesta.ch/">Kyle Stachowicz</a>, 
-            <a target="_blank" href="https://brianichter.com/">Brian Ichter</a>, 
-            <a target="_blank" href="https://dannydriess.github.io/">Danny Driess</a>, 
-            <a target="_blank" href="https://suraj-nair-1.github.io/">Suraj Nair</a>, 
-            <a target="_blank" href="https://quanvuong.github.io/">Quan Vuong</a>, 
-            <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>, 
-            <a target="_blank" href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a>,
-            <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a><br>
-            <i>ArXiv</i>, 2025<br>
-            <a target="_blank" href ="https://arxiv.org/abs/2501.09747">paper</a>  / 
-            <a target="_blank" href ="https://www.pi.website/research/fast">website</a>  / 
-            <a target="_blank" href ="https://huggingface.co/physical-intelligence/fast">code</a>
+            <strong>Yuxuan Chen</strong>, 
+            Xiao Li<br>
+            <i>ArXiv</i>, 2506.17639<br>
+            <a target="_blank" href ="https://arxiv.org/abs/2506.17639">paper</a>  / 
+            <a target="_blank" href ="https://rlrc-vla.github.io/">website</a>  / 
             <br>
           </p>
-          <p>We release FAST, a new action tokenization method for vision-language-action models. FAST is a simple, efficient, and scalable method for tokenizing actions into a compact, discrete representation.
-            With FAST, we can train VLAs 5x faster and build the first VLAs that work zero-shot in new environments. </p>
+          <p>We propose RLRC, a three-stage recovery method for compressed VLAs, including structured pruning, performance recovery based on SFT and RL, and further quantization. RLRC achieves up to an 8x reduction in memory usage and a 2.3x improvement in inference throughput, while maintaining or even surpassing the original VLA's task success rate. </p>
           <p>
           </p>  
           </td>
         </tr>
 
-        <tr  onmouseout="_start()" onmouseover="remix_start()">
+        <tr  onmouseout="_start()" onmouseover="fastnav_start()">
           <td width="25%">
             <div class="one">
-            <div class="two" id = 'remix_image'><img src='resources/remix.gif' width="160" height="160" style="background-color:white;"></div>
-            <img src='resources/remix.jpeg' width="160" height="100" style="z-index:-1">
+            <!--<div class="two" id = 'fastnav_image'><img src='resources/fastnav.gif' width="160" height="160" style="background-color:white;"></div>-->
+            <img src='resources/fastnav.png' width="180" height="100" style="z-index:-1">
             </div>
             <script type="text/javascript">
-            function remix_start() {
-            document.getElementById('remix_image').style.opacity = "1";
+            function fastnav_start() {
+            document.getElementById('fastnav_image').style.opacity = "1";
             }
-            function remix_stop() {
-            document.getElementById('remix_image').style.opacity = "0";
+            function fastnav_stop() {
+            document.getElementById('fastnav_image').style.opacity = "0";
             }
             // spirl_stop()
             </script>
@@ -236,629 +254,22 @@
           <p>
           <p>
             <a target="_blank" href="https://arxiv.org/abs/2408.14037">
-            <papertitle>Re-Mix: Optimizing Data Mixtures for Large Scale Imitation Learning</papertitle>
+            <papertitle>FASTNav: Fine-Tuned Adaptive Small-Language-Models Trained for Multi-Point Robot Navigation</papertitle>
             </a>
             <br>
-            <a target="_blank" href="http://joeyhejna.com/">Joey Hejna</a>, 
-            <a target="_blank" href="https://www.linkedin.com/in/chetbhateja">Chethan Bhateja</a>, 
-            <a target="_blank" href="http://kpertsch.github.io/">Yichen Jian</a>, 
-            <strong>Karl Pertsch</strong>, 
-            <a href="https://dorsa.fyi/" target="_blank">Dorsa Sadigh</a><br>
-            <i>Conference on Robot Learning (CoRL)</i>, 2024<br>
-            <a target="_blank" href ="https://arxiv.org/abs/2408.14037">paper</a>  / 
-            <a target="_blank" href ="https://github.com/jhejna/remix">code</a>
+            <strong>Yuxuan Chen</strong>, 
+            Yixin Han,
+            Xiao Li<br>
+            <i>IEEE Robotics and Automation Letters (RA-L)</i>, 2024<br>
+            <a target="_blank" href ="https://arxiv.org/abs/2411.13262">paper</a>
             <br>
           </p>
-          <p>We develop a scalable approach for optimizing data mixtures for large-scale robot imitation learning, using group distributionally robust optimization. Our approach generates dataset weights for the RT-X data mixture that 
-            outperform weights tuned by human experts. </p>
+          <p> We propose FASTNav - a method for boosting lightweight LLMs, also known as small language models (SLMs), for robot navigation. The proposed method contains three modules: fine-tuning, teacher-student iteration, and language-based multi-point robot navigation. We train and evaluate models with FASTNav in both simulation and real robots, proving that we can deploy them with low cost, high accuracy and low response time. </p>
           <p>
           </p>  
           </td>
         </tr>
 
-        <tr  onmouseout="_start()" onmouseover="ecot_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'ecot_image'><img src='resources/ecot.gif' width="160" height="160"></div>
-            <img src='resources/ecot.jpeg' width="160" height="100" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function ecot_start() {
-            document.getElementById('ecot_image').style.opacity = "1";
-            }
-            function ecot_stop() {
-            document.getElementById('ecot_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://embodied-cot.github.io/">
-            <papertitle>Robotic Control via Embodied Chain-of-Thought Reasoning</papertitle>
-            </a>
-            <br>
-            <a target="_blank" href="https://michalzawalski.github.io/">Michal Zawalski</a>*, 
-            <a target="_blank" href="https://verityw.github.io/">William Chen</a>*, 
-            <strong>Karl Pertsch</strong>, 
-            <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>,
-            <a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a><br>
-            <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a><br>
-            <i>Conference on Robot Learning (CoRL)</i>, 2024<br>
-            <a target="_blank" href ="https://embodied-cot.github.io/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2407.08693">paper</a>  / 
-            <a target="_blank" href ="https://github.com/MichalZawalski/embodied-CoT">code</a> / <a target="_blank" href ="https://huggingface.co/embodied-cot">models</a>
-            <br>
-          </p>
-          <p>We propose embodied chain-of-thought learning for vision-language-action models (VLAs). By training VLAs to "look and think" before acting, i.e. to predict intermediate "grounded reasoning steps" like subtasks, object bounding boxes, etc. we can enable substantially improved generalization.
-            Our approach increases the performance of OpenVLA on challenging generalization evaluations by 30% without any additional robot data.  </p>
-          <p>
-          </p>  
-          </td>
-        </tr>
-
-        <tr  onmouseout="_start()" onmouseover="openvla_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'openvla_image'><img src='resources/openvla.gif' width="160" height="160"></div>
-            <img src='resources/openvla.jpeg' width="160" height="100" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function openvla_start() {
-            document.getElementById('openvla_image').style.opacity = "1";
-            }
-            function openvla_stop() {
-            document.getElementById('openvla_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://openvla.github.io/">
-            <papertitle>OpenVLA: An Open-Source Vision-Language-Action Model</papertitle>
-            </a>
-            <br>
-            <a target="_blank" href="https://moojink.com/">Moo Jin Kim</a>*, <strong>Karl Pertsch</strong>*, <a href="https://www.siddkaramcheti.com/" target="_blank">Siddharth Karamcheti*</a>,
-            <a href="https://tedxiao.me/" target="_blank">Ted Xiao</a>,
-            <a href="https://abalakrishna123.github.io/" target="_blank">Ashwin Balakrishna</a>,
-            <a href="https://suraj-nair-1.github.io/" target="_blank">Suraj Nair</a>,
-            <a href="https://rmrafailov.github.io/" target="_blank">Rafael Rafailov</a>,
-            <a href="" target="_blank">Ethan Foster</a>,
-            <a href="" target="_blank">Grace Lam</a>,
-            <a href="https://www.linkedin.com/in/pannag-sanketi-bb91142" target="_blank">Pannag Sanketi</a>,
-            <a href="https://quanvuong.github.io/" target="_blank">Quan Vuong</a>,
-            <a href="https://aicenter.stanford.edu/people/thomas-kollar" target="_blank">Thomas Kollar</a>,
-            <a href="https://www.benburchfiel.com/" target="_blank">Benjamin Burchfiel</a>,
-            <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>,
-            <a href="https://dorsa.fyi/" target="_blank">Dorsa Sadigh</a>,
-            <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine,</a>
-            <a href="https://cs.stanford.edu/~pliang/" target="_blank">Percy Liang</a>,
-            <a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a><br>
-            <i>Conference on Robot Learning (CoRL)</i>, 2024<br>
-            <a target="_blank" href ="https://openvla.github.io/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2406.09246">paper</a>  / 
-            <a target="_blank" href ="https://github.com/openvla/openvla">code</a> / <a target="_blank" href ="https://huggingface.co/openvla">models</a>
-            <br>
-          </p>
-          <p>We introduce OpenVLA, a 7B-parameter open-source vision-language-action model (VLA), pretrained on 970k robot episodes from the Open X-Embodiment dataset. OpenVLA sets a new state of the art for generalist robot manipulation policies. It supports controlling multiple robots out of the box and can be quickly adapted to new robot setups via parameter-efficient fine-tuning. OpenVLA models, code, and training data are fully open-source.</p>
-          <p>
-          </p>  
-          </td>
-        </tr>
-
-        <tr  onmouseout="_start()" onmouseover="simpler_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'simpler_image'><img src='resources/simpler.gif' width="160" height="160"></div>
-            <img src='resources/simpler.jpeg' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function simpler_start() {
-            document.getElementById('simpler_image').style.opacity = "1";
-            }
-            function simpler_stop() {
-            document.getElementById('simpler_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://simpler-env.github.io/">
-            <papertitle>Evaluating Real-World Robot Manipulation Policies in Simulation</papertitle>
-            </a>
-            <br>
-            <a target="_blank" href="https://xuanlinli17.github.io/">Xuanlin Li</a>*, <a target="_blank" href="https://www.kylehsu.org/">Kyle Hsu</a>*, <a target="_blank" href="https://cseweb.ucsd.edu/~jigu/">Jiayuan Gu</a>*, <strong>Karl Pertsch</strong>, <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>, ..., <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a target="_blank" href="https://jiajunwu.com/">Jiajun Wu, <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn, <a target="_blank" href="https://cseweb.ucsd.edu/~haosu/">Hao Su</a>, <a target="_blank" href="https://quanvuong.github.io/">Quan Vuong</a>, <a target="_blank" href="https://tedxiao.me/">Ted Xiao</a><br>
-            <i>Conference on Robot Learning (CoRL)</i>, 2024<br>
-            <a target="_blank" href ="https://simpler-env.github.io/">project page</a> / <a target="_blank" href ="https://simpler-env.github.io/paper">paper</a>  / 
-            <a target="_blank" href ="https://github.com/simpler-env/SimplerEnv">code</a>
-            <br>
-          </p>
-          <p> We introduce SIMPLER, a collection of simulated environments for manipulation policy evaluation on common real robot setups. We demonstrate strong correlation between policy performance in SIMPLER environments and in the real world through paired sim-and-real evaluations of open-source manipulation policies.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="droid_start()" onmouseover="droid_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'droid_image'><img src='resources/droid.gif' width="160" height="160"></div>
-            <img src='resources/droid.jpeg' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function droid_start() {
-            document.getElementById('droid_image').style.opacity = "1";
-            }
-            function droid_stop() {
-            document.getElementById('droid_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://droid-dataset.github.io/">
-            <papertitle>DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset</papertitle>
-            </a>
-            <br>
-            <a target="_blank" href="https://www.linkedin.com/in/alexander-khazatsky-b98841149">Alexander Khazatsky</a>*, <strong>Karl Pertsch</strong>*, <a target="_blank" href="https://suraj-nair-1.github.io/">Suraj Nair</a>, ..., <a target="_blank" href="https://www.linkedin.com/in/tkollar">Thomas Kollar</a>, <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
-            <i>Robotics: Science and Systems (RSS)</i>, 2024<br>
-            <a target="_blank" href ="https://droid-dataset.github.io/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2403.12945">paper</a>  / 
-            <a target="_blank" href ="https://gdroid-dataset.github.io/visualizer">dataset visualizer</a>
-            <br>
-          </p>
-          <p> We introduce DROID, the most diverse robot manipulation dataset to date. It contains 76k demonstration trajectories or 350 hours of interaction data, collected across 564 scenes and 84 tasks by 50 data collectors in North America, Asia, and Europe over the course of 12 months. We demonstrate that training with DROID leads to policies with higher performance and improved generalization ability. We open source the full dataset, policy learning code, and a detailed guide for reproducing our robot hardware setup.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="octo_start()" onmouseover="octo_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'octo_image'><img src='resources/octo.gif' width="160" height="100"></div>
-            <!-- <img src='resources/octo.jpeg' width="160" height="100" style="z-index:-1"> -->
-            </div>
-            <script type="text/javascript">
-            function octo_start() {
-            document.getElementById('octo_image').style.opacity = "1";
-            }
-            function octo_stop() {
-            document.getElementById('octo_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://octo-models.github.io/">
-            <papertitle>Octo: An Open-Source Generalist Robot Policy</papertitle>
-            </a>
-            <br>
-            <a target="_blank" href="https://dibyaghosh.com/">Dibya Ghosh</a>*, <a target="_blank" href="https://homerwalke.com/">Homer Walke</a>*, <strong>Karl Pertsch</strong>*, <a target="_blank" href="https://kevin.black/">Kevin Black</a>*, <a target="_blank" href="https://www.oiermees.com/">Oier Mees</a>*, ..., <a target="_blank" href="https://dorsa.fyi/">Dorsa Sadigh</a>, <a target="_blank" href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>, <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a><br>
-            <i>Robotics: Science and Systems (RSS)</i>, 2024<br>
-            <a target="_blank" href ="https://octo-models.github.io/">project page</a> / <a target="_blank" href ="https://octo-models.github.io/paper.pdf">tech report</a>  / 
-            <a target="_blank" href ="https://github.com/octo-models/octo">code</a>
-            <br>
-          </p>
-          <p> We introduce Octo, an open-source generalist policy, trained on 800k robot trajectories. Octo is a large, transformer-based diffusion policy that supports flexible task specification, observation and action spaces. It can control a diverse range of robots out of the box and supports efficient finetuning to new robot configurations. We release pre-trained checkpoints and our full training + finetuning pipelines.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="rtx_start()" onmouseover="rtx_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'rtx_image'><img src='resources/rtx_thumbnail.gif' width="160" height="160"></div>
-            <img src='resources/rtx_thumbnail.jpeg' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function rtx_start() {
-            document.getElementById('rtx_image').style.opacity = "1";
-            }
-            function rtx_stop() {
-            document.getElementById('rtx_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://robotics-transformer-x.github.io/">
-            <papertitle>Open X-Embodiment: Robotic Learning Datasets and RT-X Models</papertitle>
-            </a>
-            <br>
-            Open X-Embodiment Collaboration<br>
-            (Project co-leads: <a href="https://quanvuong.github.io/" target="_blank">Quan Vuong</a>, <strong>Karl Pertsch</strong>)<br>
-            <i>International Conference on Robotics and Automation (ICRA)</i>, 2023 (<span style="color: #ff0000">Best Conference Paper Award</span>)<br>
-            <a target="_blank" href ="https://robotics-transformer-x.github.io/">project page</a> / <a target="_blank" href ="https://robotics-transformer-x.github.io/paper.pdf">arXiv</a>  / 
-            <a target="_blank" href ="https://docs.google.com/spreadsheets/d/1rPBD77tk60AEIGZrGSODwyyzs5FgCU9Uz3h-3_t2A9g/edit?usp=sharing">dataset</a>
-            <br>
-          </p>
-          <p> We introduce the Open X-Embodiment Dataset, the largest robot learning dataset to date with 1M+ real robot trajectories, spanning 22 robot embodiments. We train large, transformer-based policies on the dataset (RT-1-X, RT-2-X) and show that co-training with our diverse dataset substantially improves performance.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="star_start()" onmouseover="star_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'star_image'><img src='resources/star.gif' width="160" height="160"></div>
-            <img src='resources/star.png' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function star_start() {
-            document.getElementById('star_image').style.opacity = "1";
-            }
-            function star_stop() {
-            document.getElementById('star_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://kpertsch.github.io/star">
-            <papertitle>Cross-Domain Transfer via Semantic Skill Imitation</papertitle>
-            </a>
-            <br>
-            <strong>Karl Pertsch</strong>, <a target="_blank" href="https://rutadesai.github.io/">Ruta Desai</a>, <a target="_blank" href="https://vikashplus.github.io/">Vikash Kumar</a>, <a target="_blank" href="https://fmeier.github.io/">Franziska Meier</a>, <a target="_blank" href="https://www.clvrai.com/">Joseph J. Lim</a>, <a target="_blank" href="https://faculty.cc.gatech.edu/~dbatra/">Dhruv Batra</a>, <a target="_blank" href="https://ai.facebook.com/people/akshara-rai/">Akshara Rai</a><br>
-            <i>Conference on Robot Learning (CoRL)</i>, 2022<br>
-            <a target="_blank" href ="https://kpertsch.github.io/star">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2212.07407">arXiv</a>  / 
-            <a target="_blank" href ="https://github.com/kpertsch/star">code</a>
-            <br>
-          </p>
-          <p> We learn a semantic skill policy that enables cross-domain imitation: from robot to robot between different environments and even from human video to robot. We show that we can learn long-horizon robotic manipulation tasks in a simulated kitchen environment using only three minutes of human video, recorded in my kitchen with a GoPro strapped to my head.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="pato_start()" onmouseover="pato_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'pato_image'><img src='resources/pato.gif' width="160" height="160"></div>
-            <img src='resources/pato.png' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function pato_start() {
-            document.getElementById('pato_image').style.opacity = "1";
-            }
-            function pato_stop() {
-            document.getElementById('pato_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://clvrai.github.io/pato">
-            <papertitle>Assisted Teleoperation for Scalable Robot Data Collection</papertitle>
-            </a>
-            <br>
-            <a target="_blank" href="https://shivindass.github.io">Shivin Dass</a>*, <strong>Karl Pertsch</strong>*, <a target="_blank" href="https://www.hejiazhang.me/">Hejia Zhang</a>, <a target="_blank" href="https://youngwoon.github.io">Youngwoon Lee</a>, <a target="_blank" href="https://www.clvrai.com/">Joseph J. Lim</a>, <a target="_blank" href="https://stefanosnikolaidis.net/">Stefanos Nikolaidis</a><br>
-            <!-- <i>Conference on Robot Learning (CoRL)</i>, 2022<br> -->
-            <a target="_blank" href ="https://clvrai.github.io/pato">project page</a> / <a target="_blank" href ="https://drive.google.com/file/d/1pqgBTju0p7-mUUGl1IYoh4gQ1q_qbL7m/view?usp=sharing">arXiv</a>  / 
-            <a target="_blank" href ="https://github.com/clvrai/pato">code</a>
-            <br>
-          </p>
-          <p> We enable scalable robot data collection by assisting human teleoperators with a learned policy. Our approach estimates its uncertainty over future actions to determine when to request user input. In real world user studies we demonstrate that our system enables more efficient teleoperation with reduced mental load and up to four robots in parallel.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="tarp_start()" onmouseover="tarp_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'tarp_image'><img src='resources/tarp.png' width="160" height="160"></div>
-            <img src='resources/tarp.png' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function tarp_start() {
-            document.getElementById('tarp_image').style.opacity = "1";
-            }
-            function tarp_stop() {
-            document.getElementById('tarp_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://clvrai.com/tarp">
-            <papertitle>Task-Induced Representation Learning</papertitle>
-            </a>
-            <br>
-            <a target="_blank" href="https://junjungoal.github.io/">Jun Yamada</a>, <strong>Karl Pertsch</strong>, <a target="_blank" href="https://anisha2102.github.io/">Anisha Gunjal</a>, <a target="_blank" href="https://viterbi-web.usc.edu/~limjj/">Joseph J. Lim</a><br>
-            <i>International Conference on Learning Representations (ICLR)</i>, 2022<br>
-            <a target="_blank" href ="https://clvrai.com/tarp">project page</a> / <a target="_blank" href ="https://openreview.net/forum?id=OzyXtIZAzFv">arXiv</a>  / 
-            <a target="_blank" href ="https://github.com/clvrai/tarp">code</a>
-            <br>
-          </p>
-          <p> We evaluate the effectiveness of representation learning approaches on visually complex environments with substantial distractors. We compare common unsupervised representation learning approaches to task-induced representations, that leverage task information from prior tasks to learn what parts of the scene are important to model and what parts can be ignored.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="simpl_start()" onmouseover="simpl_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'simpl_image'><img src='resources/simpl_teaser.png' width="160" height="160"></div>
-            <img src='resources/simpl_teaser.png' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function simpl_start() {
-            document.getElementById('simpl_image').style.opacity = "1";
-            }
-            function simpl_stop() {
-            document.getElementById('simpl_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://clvrai.com/simpl">
-            <papertitle>Skill-based Meta-Reinforcement Learning</papertitle>
-            </a>
-            <br>
-            <a target="_blank" href="https://namsan96.github.io/">Taewook Nam</a>, <a target="_blank" href="https://shaohua0116.github.io/">Shao-Hua Sun</a>, <strong>Karl Pertsch</strong>, <a target="_blank" href="http://www.sungjuhwang.com/">Sung Ju Hwang</a>, <a target="_blank" href="https://viterbi-web.usc.edu/~limjj/">Joseph J. Lim</a><br>
-            <i>International Conference on Learning Representations (ICLR)</i>, 2022<br>
-            <a target="_blank" href ="https://clvrai.com/simpl">project page</a> / <a target="_blank" href ="https://openreview.net/forum?id=jeLW-Fh9bV">arXiv</a>  / 
-            <a target="_blank" href ="https://github.com/namsan96/simpl">code</a>
-            <br>
-          </p>
-          <p> We perform meta-RL on top of skills extracted from large task-agnostic offline datasets. By combining meta-training tasks with offline data we can meta-learn policies that can quickly learn new long-horizon, sparse reward tasks.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="skild_start()" onmouseover="skild_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'skild_image'><img src='skild_thumbnail.gif' width="160" height="160"></div>
-            <img src='skild_start.jpeg' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function skild_start() {
-            document.getElementById('skild_image').style.opacity = "1";
-            }
-            function skild_stop() {
-            document.getElementById('skild_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://arxiv.org/abs/2107.10253">
-            <papertitle>Demonstration-Guided Reinforcement Learning with Learned Skills</papertitle>
-            </a>
-            <br>
-            <strong>Karl Pertsch</strong>, <a target="_blank" href="https://youngwoon.github.io/">Youngwoon Lee</a>, <a target="_blank" href="https://ventusyue.github.io/">Yue Wu</a>, <a target="_blank" href="https://viterbi-web.usc.edu/~limjj/">Joseph J. Lim</a><br>
-            <i>Conference on Robot Learning (CoRL)</i>, 2021<br>
-            <a target="_blank" href ="https://clvrai.github.io/skild/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2107.10253">arXiv</a>  / 
-            <a target="_blank" href ="https://github.com/clvrai/skild">code</a>
-            <br>
-          </p>
-          <p> We follow long-horizon demonstrations by imitating the demonstrated skills instead of the primitive actions. By using skills learned from large, task-agnostic experience datasets for imitation, our approach SkiLD can seamlessly integrate task-agnostic data & demonstrations via a skill-based learning framework.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="spirl_start()" onmouseover="spirl_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'spirl_image'><img src='spirl_corl2020.gif' width="160" height="160"></div>
-            <img src='spirl_start.jpeg' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function spirl_start() {
-            document.getElementById('spirl_image').style.opacity = "1";
-            }
-            function spirl_stop() {
-            document.getElementById('spirl_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://arxiv.org/abs/2010.11944">
-            <papertitle>Accelerating Reinforcement Learning with Learned Skill Priors</papertitle>
-            </a>
-            <br>
-            <strong>Karl Pertsch</strong>, <a target="_blank" href="https://youngwoon.github.io/">Youngwoon Lee</a>, <a target="_blank" href="https://viterbi-web.usc.edu/~limjj/">Joseph J. Lim</a><br>
-            <i>Conference on Robot Learning (CoRL)</i>, 2020 (<span style="color: #ff0000">Plenary Talk, top 4%</span>)<br>
-            <i>Workshop on Robot Learning @ NeurIPS</i>, 2020 (<span style="color: #ff0000">Best Paper Runner-up Award</span>)<br>
-            <i>Deep RL Workshop @ NeurIPS</i>, 2020 (<span style="color: #ff0000">Oral</span>)<br>
-            <a target="_blank" href ="https://clvrai.github.io/spirl/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2010.11944">arXiv</a>  / 
-            <a target="_blank" href ="https://github.com/clvrai/spirl">code</a>
-            <br>
-          </p>
-          <p> We jointly learn an embedding space of skills and a prior over skills. This skill prior tells us <b>when</b> to use <b>which</b> skill and guides learning on new tasks for effective skill transfer from large offline datasets.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="mopa_start()" onmouseover="mopa_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'mopa_image'><img src='mopa_corl2020.gif' width="160" height="160"></div>
-            <img src='mopa_start.png' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function mopa_start() {
-            document.getElementById('mopa_image').style.opacity = "1";
-            }
-            function mopa_stop() {
-            document.getElementById('mopa_image').style.opacity = "0";
-            }
-            // mopa_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://arxiv.org/abs/2010.11940">
-            <papertitle>Motion Planner Augmented Reinforcement Learning for Robot Manipulation in Obstructed Environments</papertitle>
-            </a>
-            <br>
-            <a target="_blank" href="https://www.junjungoal.tech/">Jun Yamada</a>*, <a target="_blank" href="https://youngwoon.github.io/">Youngwoon Lee</a>*, <a target="_blank" href="https://www.gautamsalhotra.com/">Gautam Salhorta</a>, <strong>Karl Pertsch</strong>, <a target="_blank" href="https://mpflueger.github.io/">Max Pflueger</a>, <a target="_blank" href="http://robotics.usc.edu/~gaurav/">Gaurav S.Sukhatme</a>, <a target="_blank" href="https://viterbi-web.usc.edu/~limjj/">Joseph J. Lim</a>, <a target="_blank" href="http://www.peter-englert.net/">Peter Englert</a><br>
-            <i>Conference on Robot Learning (CoRL)</i>, 2020<br>
-            <a target="_blank" href ="https://clvrai.github.io/mopa-rl/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2010.11940">arXiv</a>  / 
-            <a target="_blank" href ="https://github.com/clvrai/mopa-rl">code</a>
-            <br>
-          </p>
-          <p> Our approach augments model-free RL agents with motion planning capabilities, enabling them to solve long-horizon manipulation tasks in cluttered environments.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="gcp_start()" onmouseover="gcp_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'gcp_image'><img src='gcp_animate.gif' width="160" height="160"></div>
-            <img src='gcp.jpeg' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function gcp_start() {
-            document.getElementById('gcp_image').style.opacity = "1";
-            }
-            function gcp_stop() {
-            document.getElementById('gcp_image').style.opacity = "0";
-            }
-            // gcp_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://arxiv.org/abs/2006.13205">
-            <papertitle>Long-Horizon Visual Planning with Goal-Conditioned Hierarchical Predictors</papertitle>
-            </a>
-            <br>
-            <strong>Karl Pertsch</strong>*, <a target="_blank" href="http://www.cis.upenn.edu/~oleh/">Oleh Rybkin</a>*, <a target="_blank" href="https://febert.github.io/">Frederik Ebert</a>, <a target="_blank" href="http://people.eecs.berkeley.edu/~cbfinn/">Chelsea Finn</a>, <a target="_blank" href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a>, <a target="_blank" href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a><br>
-            <i>Conference on Neural Information Processing Systems (NeurIPS)</i>, 2020<br>
-            <a target="_blank" href ="https://orybkin.github.io/video-gcp/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/2006.13205">arXiv</a>  /
-            <a target="_blank" href ="https://youtu.be/axXx-x86IeY">video</a> / <a target="_blank" href ="https://github.com/orybkin/video-gcp">code</a>
-            <br>
-          </p>
-          <p> We propose a hierarchical prediction model that predicts sequences by recursive infilling. We use this model to devise a hierarchical planning approach that allows to scale visual MPC to long-horizon tasks with hundreds of time steps.</p>
-          <p>
-          </p>
-          </td>
-        </tr>
-
-        <tr  onmouseout="keyin_stop()" onmouseover="keyin_start()">
-          <td width="25%">
-            <div class="one">
-            <div class="two" id = 'keyin_image'><img src='keyin.gif' width="160" height="160"></div>
-            <img src='keyin.png' width="160" height="160" style="z-index:-1">
-            </div>
-            <script type="text/javascript">
-            function keyin_start() {
-            document.getElementById('keyin_image').style.opacity = "1";
-            }
-            function keyin_stop() {
-            document.getElementById('keyin_image').style.opacity = "0";
-            }
-            keyin_stop()
-            </script>
-          </td>
-          <td width="75%" valign="top">
-          <p>
-          <p>
-            <a target="_blank" href="https://arxiv.org/abs/1904.05869">
-            <papertitle>Keyframing the Future: Keyframe Discovery for Visual Prediction and Planning</papertitle>
-            </a>
-            <br>
-            <strong>Karl Pertsch</strong>*, <a target="_blank" href="http://www.cis.upenn.edu/~oleh/">Oleh Rybkin</a>*, <a target="_blank" href="https://www.linkedin.com/in/yjy0625/">Jingyun Yang</a>, Shenghao Zhou, <a target="_blank" href="http://www.scs.ryerson.ca/kosta/">Kosta Derpanis</a>, <a target="_blank" href="http://www-bcf.usc.edu/~limjj/">Joseph Lim</a>, <a target="_blank" href="http://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a>, <a target="_blank" href="http://www.drewjaegle.com/">Andrew Jaegle</a><br>
-            <i>Conference on Learning for Dynamics and Control</i>, 2020<br>
-            <a target="_blank" href ="https://sites.google.com/view/keyin">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/1904.05869">arXiv</a>  /
-            <a target="_blank" href ="https://youtu.be/e2hVV5FDKf8">video</a> / <a target="_blank" href ="poster_keyin.pdf">poster</a>
-            <br>
-          </p>
-          <p> We propose a keyframe-based video prediction model that can unsupervisedly discover the moments of interesting change, the <i>keyframes</i>, in the data. We show that using the predicted keyframes as subgoals for planning improves performance on a simulated pushing task.</p>
-          <p>
-          <i> Hover over image (or tap the screen) to see the video.</i></p>
-          </p>
-          </td>
-        </tr>
-
-	      <tr  onmouseout="sensorimotor_stop()" onmouseover="sensorimotor_start()">
-	        <td width="25%">
-	          <div class="one">
-	          <div class="two" id = 'sensorimotor_image'><img src='CLASP_after.gif' width="160" height="160"></div>
-	          <img src='CLASP_before.png' width="160" height="160">
-	          </div>
-	          <script type="text/javascript">
-	          function sensorimotor_start() {
-	          document.getElementById('sensorimotor_image').style.opacity = "1";
-	          }
-	          function sensorimotor_stop() {
-	          document.getElementById('sensorimotor_image').style.opacity = "0";
-	          }
-	          sensorimotor_stop()
-	          </script>
-	        </td>
-	        <td width="75%" valign="top">
-	        <p>
-	        <p>
-	          <a target="_blank" href="https://arxiv.org/abs/1806.09655">
-	          <papertitle>Learning what you can do before doing anything</papertitle>
-	          </a>
-	          <br>
-	          <a target="_blank" href="http://www.cis.upenn.edu/~oleh/">Oleh Rybkin</a>*, <strong>Karl Pertsch</strong>*,  <a target="_blank" href="http://www.scs.ryerson.ca/kosta/">Kosta Derpanis</a>, <a target="_blank" href="http://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a>, <a target="_blank" href="http://www.drewjaegle.com/">Andrew Jaegle</a><br>
-	          <i>International Conference on Learning Representations (ICLR)</i>, 2019<br>
-	          <a target="_blank" href ="https://daniilidis-group.github.io/learned_action_spaces/">project page</a> / <a target="_blank" href ="https://arxiv.org/abs/1806.09655">arXiv</a>  /
-	          <a target="_blank" href ="https://daniilidis-group.github.io/learned_action_spaces/poster.pdf">poster</a>
-	          <br>
-	        </p>
-	        <p> We learn an agent's action space from pure visual observations along with a predictive model. It can then be used to perform model predictive control, requiring orders of magnitude fewer action annotated videos.</p>
-	        <p>
-	        <i> Hover over image (or tap the screen) to see the video.</i></p>
-	        </p>
-	        </td>
-	      </tr>
-
-	      <tr>
-            <td width="25%">
-              <img src='object_pose.png' width="160" height="160">
-            </td>
-            <td valign="top" width="75%">
-              <p>
-                <a target="_blank" href="https://arxiv.org/abs/1712.01924">
-                  <papertitle>iPose: Instance-Aware 6D Pose Estimation of Partly Occluded Objects</papertitle>
-                </a>
-                <br>
-                <a target="_blank" href="https://scholar.google.com/citations?user=-oPXmWIAAAAJ&hl=en">Omid Hosseini Jafari</a>*, <a target="_blank" href="http://sivakm.github.io/">Siva Karthik Mustikovela</a>*, <strong>Karl Pertsch</strong>,  <a target="_blank" href="https://hci.iwr.uni-heidelberg.de/vislearn/people/eric-brachmann/">Eric Brachmann</a>, <a target="_blank" href="https://hci.iwr.uni-heidelberg.de/vislearn/people/carsten-rother/">Carsten Rother</a><br>
-                <i>Asian Conference on Computer Vision (ACCV)</i>, 2018
-                <br>
-                <p></p>
-                <p>Combining a CNN-based regression of dense on-object surface labeling with RANSAC-based pose fitting for accurate 6DoF pose estimation of texture-less objects under heavy occlusion.</p>
-            </td>
-          </tr>
         </table>
         
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
