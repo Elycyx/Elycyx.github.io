@@ -199,20 +199,16 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-        <tr  onmouseout="_start()" onmouseover="rlrc_start()">
+        <tr>
           <td width="25%">
             <div class="one">
-            <img src='resources/rlrc.png' width="180" height="100" style="z-index:-1">
+            <video width="180" height="100" autoplay loop muted playsinline
+                   disablePictureInPicture
+                   controlsList="nodownload nofullscreen noremoteplayback"
+                   style="pointer-events: none; object-fit: cover; display: block;">
+              <source src="resources/rlrc_video.mp4" type="video/mp4">
+            </video>
             </div>
-            <script type="text/javascript">
-            function rlrc_start() {
-            document.getElementById('rlrc_image').style.opacity = "1";
-            }
-            function rlrc_stop() {
-            document.getElementById('rlrc_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
           </td>
           <td width="75%" valign="top">
           <p>
@@ -222,8 +218,10 @@
             </a>
             <br>
             <strong>Yuxuan Chen</strong>, 
+            Yixin Han,
+            Yize Huang,
             Xiao Li<br>
-            <i>ArXiv</i>, 2506.17639<br>
+            <i>IEEE Robotics and Automation Letters (RA-L)</i>, 2026<br>
             <a target="_blank" href ="https://arxiv.org/abs/2506.17639">paper</a>  / 
             <a target="_blank" href ="https://rlrc-vla.github.io/">website</a>  / 
             <br>
@@ -234,21 +232,16 @@
           </td>
         </tr>
 
-        <tr  onmouseout="_start()" onmouseover="fastnav_start()">
+        <tr>
           <td width="25%">
             <div class="one">
-            <!--<div class="two" id = 'fastnav_image'><img src='resources/fastnav.gif' width="160" height="160" style="background-color:white;"></div>-->
-            <img src='resources/fastnav.png' width="180" height="100" style="z-index:-1">
+            <video width="180" height="100" autoplay loop muted playsinline
+                   disablePictureInPicture
+                   controlsList="nodownload nofullscreen noremoteplayback"
+                   style="pointer-events: none; object-fit: cover; display: block;">
+              <source src="resources/FASTNav%20.mp4" type="video/mp4">
+            </video>
             </div>
-            <script type="text/javascript">
-            function fastnav_start() {
-            document.getElementById('fastnav_image').style.opacity = "1";
-            }
-            function fastnav_stop() {
-            document.getElementById('fastnav_image').style.opacity = "0";
-            }
-            // spirl_stop()
-            </script>
           </td>
           <td width="75%" valign="top">
           <p>
